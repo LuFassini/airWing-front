@@ -18,6 +18,21 @@ export default function Form() {
   const [showPassword, setShowPassword] = useState(true);
 
   function handleUser() {
+    if (!name || !birthYear || !age || !email || !cpf || !phone || !sex || !password) {
+      alert("Preencha todos os campos!");
+      return;
+    }
+
+    if (isNaN(age) || isNaN(birthYear)) {
+      alert("Idade e Ano de Nascimento devem ser números!");
+      return;
+    }
+    
+    if (!email.includes("@") || !email.includes(".")) {
+      alert("Email inválido!");
+      return;
+    }
+    
     console.log({
       name,
       birthYear,
@@ -85,6 +100,7 @@ export default function Form() {
             <Icon name={showPassword ? "lock" : "lock-open"} />
           </TouchableOpacity>
         </View>
+        <Button title="Cadastrar" onPress={handleUser} />
       </View>
     </View>
   );
