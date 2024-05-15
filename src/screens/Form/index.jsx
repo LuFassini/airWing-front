@@ -27,7 +27,7 @@ export default function Form() {
       alert("Idade e Ano de Nascimento devem ser números!");
       return;
     }
-    
+
     if (!email.includes("@") || !email.includes(".")) {
       alert("Email inválido!");
       return;
@@ -72,7 +72,6 @@ export default function Form() {
         <Text style={styles.textSubTitle}>Voe para varios lugares!</Text>
         <TextInput style={styles.input} placeholder="Nome Completo" onChangeText={setName} value={name} />
         <TextInput style={styles.input} placeholder="Ano de Nascimento" onChangeText={setBirthYear} value={birthYear} />
-        <TextInput style={styles.input} placeholder="Idade" onChangeText={setAge} value={age} />
         <TextInput style={styles.input} placeholder="Email" onChangeText={setEmail} value={email} />
         <TextInputMask
           style={styles.input}
