@@ -5,6 +5,7 @@ import Home from "../screens/Home";
 import Profile from "../screens/Profile";
 import Category from "../screens/Category";
 import { user } from "../data/Profile";
+import Form from "../screens/Form";
 
 const Drawer = createDrawerNavigator();
 
@@ -59,6 +60,23 @@ const DrawerRoutes = () => {
             />
           ),
           drawerLabel: "Categorias",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
+      <Drawer.Screen
+        name="Form"
+        component={Form}
+        options={{
+          headerTitle: "",
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="edit-2"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Form",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
         }}
