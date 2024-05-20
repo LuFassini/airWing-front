@@ -12,7 +12,7 @@ const Drawer = createDrawerNavigator();
 
 const DrawerRoutes = () => {
   return (
-    <Drawer.Navigator screenOptions={{ headerShown: true }}> 
+    <Drawer.Navigator screenOptions={{ headerShown: true, drawerPosition:'right', drawerStyle:{right:0}}}> 
       <Drawer.Screen
         name="Home"
         component={Home}
