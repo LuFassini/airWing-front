@@ -54,6 +54,9 @@ const styles = StyleSheet.create({
     borderRadius: 5, // Borda arredondada
     width: '75%',
   },
+  popUp: {
+ color: '#209F7C',
+  },
 });
 
 export default styles;

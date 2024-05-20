@@ -1,15 +1,15 @@
-import { Button, Text, TextInput, View, TouchableOpacity } from "react-native";
+import { Button, Text, TextInput, View, TouchableOpacity, Image } from "react-native";
 import styles from "./styles";
 import Title from "../../components/Title";
 import TouchButton from "../../components/TouchButton";
 import { useEffect, useState } from "react";
 import { TextInputMask } from "react-native-masked-text";
 import { Icon } from "@rneui/base";
-import { RadioButton ,HelperText} from 'react-native-paper';
+import { RadioButton } from 'react-native-paper';
+import EasyNavegation from "../../components/EasyNavegation";
 export default function Form() {
   const [name, setName] = useState("");
   const [birthYear, setBirthYear] = useState("");
-  const [age, setAge] = useState("");
   const [email, setEmail] = useState("");
   const [cpf, setCpf] = useState("");
   const [phone, setPhone] = useState("");
@@ -17,13 +17,14 @@ export default function Form() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(true);
   const [checked, setChecked] = useState('M');
+  const [popUp, setPopUp] = useState(false);
   function handleUser() {
-    if (!name || !birthYear || !age || !email || !cpf || !phone || !sex || !password) {
+    if (!name || !birthYear || !email || !cpf || !phone || !sex || !password) {
       alert("Preencha todos os campos!");
       return;
     }
 
-    if (isNaN(age) || isNaN(birthYear)) {
+    if ( isNaN(birthYear)) {
       alert("Idade e Ano de Nascimento devem ser números!");
       return;
     }
@@ -36,20 +37,19 @@ export default function Form() {
     console.log({
       name,
       birthYear,
-      age,
       email,
       cpf,
       phone,
       sex,
       password,
     });
+    setPopUp(true);
     clearFields();
   }
 
   function clearFields() {
     setName("");
     setBirthYear("");
-    setAge("");
     setEmail("");
     setCpf("");
     setPhone("");
@@ -62,10 +62,27 @@ export default function Form() {
   }
   const sexpassage = (value) => {
     setSex(value)
-    console.warn(value)
   }
+
+  useEffect(() => {
+    if (popUp) {
+      setTimeout(() => {
+        setPopUp(false);
+      }, 3555);
+    }
+  }, [popUp]);
+  
   return (
     <View style={styles.container}>
+       <ScrollView >
+                     <Image source={require('../../../assets/images/logo.png')}
+                    style={{
+                        marginTop: 30,
+                        width: 100,
+                        height: 115,
+
+                    }} />
+                    <EasyNavegation />
       <Title title="Form" />
 
       <View style={styles.user}>
@@ -121,7 +138,11 @@ export default function Form() {
         <TouchableOpacity onPress={handleUser} style={styles.button} >
           <Icon name={"lock"} />
         </TouchableOpacity>
+        {
+          popUp && <Text style={styles.popUp}>Usuário cadastrado com sucesso!</Text>
+        }
       </View>
+      </ScrollView>
     </View>
   );
 }
