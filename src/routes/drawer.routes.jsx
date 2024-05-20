@@ -6,6 +6,7 @@ import Profile from "../screens/Profile";
 import Category from "../screens/Category";
 import { user } from "../data/Profile";
 import Form from "../screens/Form";
+import Termos from "../screens/Termos";
 
 const Drawer = createDrawerNavigator();
 
@@ -82,6 +83,26 @@ const DrawerRoutes = () => {
           drawerLabel: "Form",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
+           <Drawer.Screen
+        name="Termos"
+        component={Termos}
+        options={{
+          headerTitle: "",
+          drawerIcon: ({ focused }) => (
+            <Feather
+            
+              name="info"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          
+          drawerLabel: "Termos",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+
         }}
       />
     </Drawer.Navigator>

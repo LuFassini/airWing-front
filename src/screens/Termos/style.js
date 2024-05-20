@@ -1,0 +1,76 @@
+import { StyleSheet } from "react-native";
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+        padding: 20
+    },
+    titulo: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#130799',
+        opacity: 1,
+        marginBottom: 10,
+        marginTop:11,
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center"
+    },
+    subTitulo:{
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: '#0019FA',
+        marginBottom: 10,
+        marginTop: 10
+    },
+    borda:{
+        backgroundColor:"#E79DFC",
+        opacity: 0.6,
+        borderBottomColor: '#130799',
+        paddingBottom: 10,
+        width:310,
+        borderRadius: 10,
+        marginBottom: 10,
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        marginLeft:28
+    },
+    borda2:{
+        backgroundColor:"#4ECDF8",
+        opacity: 0.5,
+        paddingBottom: 10,
+        width:310,
+        borderRadius: 10,
+        marginBottom: 10,
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        marginTop:20,
+        marginLeft:28
+    },
+    titulo2: {
+        fontSize: 17,
+        fontWeight: 'bold',
+        color: '#126E8D',
+        opacity: 1,
+        marginBottom: 10,
+        marginTop:11,
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center"
+    },
+    info: {
+        fontSize: 16,
+        color: '#000',
+        marginBottom: 10
+    },
+    linha: {
+        fontSize: 16,
+        color: '#209F7C',
+        marginBottom: 10,
+        marginTop: 10
+    }
+});
+export default styles;
