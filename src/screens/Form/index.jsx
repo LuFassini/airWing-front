@@ -1,4 +1,4 @@
-import { Button, Text, TextInput, View, TouchableOpacity, Image } from "react-native";
+import { Button, Text, TextInput, View, TouchableOpacity, Image, ScrollView } from "react-native";
 import styles from "./styles";
 import Title from "../../components/Title";
 import TouchButton from "../../components/TouchButton";
