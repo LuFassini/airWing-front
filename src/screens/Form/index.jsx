@@ -5,7 +5,7 @@ import TouchButton from "../../components/TouchButton";
 import { useEffect, useState } from "react";
 import { TextInputMask } from "react-native-masked-text";
 import { Icon } from "@rneui/base";
-import { RadioButton } from 'react-native-paper';
+import { RadioButton ,HelperText} from 'react-native-paper';
 export default function Form() {
   const [name, setName] = useState("");
   const [birthYear, setBirthYear] = useState("");
