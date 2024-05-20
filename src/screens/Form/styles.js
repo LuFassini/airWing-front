@@ -20,8 +20,8 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    borderColor: '#ccc', // Cinza claro
-    borderWidth: 1,
+    borderColor: '#00B5F2',
+    borderWidth: 1, 
     marginBottom: 10,
     paddingLeft: 10,
     borderRadius: 5, // Borda arredondada
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
   inputsenha: {
     height: 40,
-    borderColor: '#ccc', // Cinza claro
+    borderColor: '#00B5F2',
     borderWidth: 1,
     marginBottom: 10,
     paddingLeft: 10,
