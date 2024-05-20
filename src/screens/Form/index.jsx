@@ -5,7 +5,7 @@ import TouchButton from "../../components/TouchButton";
 import { useEffect, useState } from "react";
 import { TextInputMask } from "react-native-masked-text";
 import { Icon } from "@rneui/base";
-
+import { RadioButton } from 'react-native-paper';
 export default function Form() {
   const [name, setName] = useState("");
   const [birthYear, setBirthYear] = useState("");
@@ -13,10 +13,10 @@ export default function Form() {
   const [email, setEmail] = useState("");
   const [cpf, setCpf] = useState("");
   const [phone, setPhone] = useState("");
-  const [sex, setSex] = useState("");
+  const [sex, setSex] = useState('');
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(true);
-
+  const [checked, setChecked] = useState('M');
   function handleUser() {
     if (!name || !birthYear || !age || !email || !cpf || !phone || !sex || !password) {
       alert("Preencha todos os campos!");
@@ -32,7 +32,7 @@ export default function Form() {
       alert("Email inválido!");
       return;
     }
-    
+
     console.log({
       name,
       birthYear,
@@ -60,13 +60,13 @@ export default function Form() {
   function showHidePassword() {
     setShowPassword(!showPassword);
   }
+  const sexpassage = (value) => {
+    setSex(value)
+    console.warn(value)
+  }
   return (
     <View style={styles.container}>
       <Title title="Form" />
-
-      <TouchButton route="Home" title="Go to Home" />
-
-      <TouchButton route="Category" title="Go to Category" />
 
       <View style={styles.user}>
         <Text style={styles.textSubTitle}>Voe para varios lugares!</Text>
@@ -75,7 +75,7 @@ export default function Form() {
         <TextInput style={styles.input} placeholder="Email" onChangeText={setEmail} value={email} />
         <TextInputMask
           style={styles.input}
-          placeholder="CPF"
+          placeholder={"CPF"}
           type={"cpf"}
           value={cpf}
           onChangeText={setCpf}
@@ -92,14 +92,35 @@ export default function Form() {
           value={phone}
           onChangeText={setPhone}
         />
-        <TextInput style={styles.input} placeholder="Sexo" onChangeText={setSex} value={sex} />
+        <RadioButton
+        value="M"
+        status={ checked === 'M' ? 'checked' : 'unchecked' }
+        onPress={() => {
+          setChecked('M');
+          sexpassage('M');
+        }
+        }
+      />
+      <Text>Macho</Text>
+      <RadioButton
+        value="F"
+        status={ checked === 'F' ? 'checked' : 'unchecked' }
+        onPress={() => {
+          setChecked('F');
+          sexpassage('F');
+        }
+        }
+      />
+      <Text>FEMEA</Text>
         <View style={styles.passwordarea}>
           <TextInput style={styles.inputsenha} placeholder="Senha" secureTextEntry={showPassword} onChangeText={setPassword} value={password} />
           <TouchableOpacity onPress={showHidePassword} style={styles.button}>
             <Icon name={showPassword ? "lock" : "lock-open"} />
           </TouchableOpacity>
         </View>
-        <Button title="Cadastrar" onPress={handleUser} />
+        <TouchableOpacity onPress={handleUser} style={styles.button} >
+          <Icon name={"lock"} />
+        </TouchableOpacity>
       </View>
     </View>
   );
