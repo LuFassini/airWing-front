@@ -4,12 +4,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    paddingHorizontal: 20,
   },
   button: {
     marginTop: 20,
     padding: 10,
-    backgroundColor: "#C9D4FF",
+    backgroundColor: "#d3d3d3",
     borderRadius: 5,
   },
   user: {
