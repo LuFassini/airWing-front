@@ -17,10 +17,13 @@ const Drawer = createDrawerNavigator();
 
 const DrawerRoutes = () => {
   return (   
-    <Drawer.Navigator screenOptions={{ headerShown: true, drawerPosition:'rigth'}}> 
+    <Drawer.Navigator screenOptions={{ headerShown: true, drawerPosition: 'right', // Defina 'left' ou 'right' aqui
+    drawerType: 'slide', // Defina 'front' ou 'back' aqui
+}}> 
       <Drawer.Screen
         name="Home"
         component={Home}
+        
         options={{
           headerTitle: () => (
             <Logo />
