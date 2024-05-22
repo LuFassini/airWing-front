@@ -11,18 +11,16 @@ const styles = StyleSheet.create({
         height: '100%',
     },
     quadro: {
-        backgroundColor: '#CB73E4',
-        opacity:0.6,
+        backgroundColor: 'rgb(203, 115, 228, 0.6)',
         padding: 20,
         margin: 20,
         borderRadius: 10,
     },
     titulo: {
         color: '#000',
-        opacity: 1,
         fontSize: 20,
         textAlign: 'center',
-        fontFamily: 'bold'
+        fontWeight: 'bold', // Corrected from fontFamily to fontWeight
     },
     texto: {
         color: '#000',
@@ -31,8 +29,7 @@ const styles = StyleSheet.create({
     },
     quadro2: {
         marginTop: -35,
-        backgroundColor: '#00B5F2',
-        opacity:0.3,
+        backgroundColor: 'rgb(0, 181, 242, 0.3)',
         padding: 20,
         margin: 20,
         borderRadius: 10,
@@ -44,6 +41,22 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         marginLeft: 50,
     },
-    });
+    quadro3: {
+        backgroundColor: 'rgb(104, 221, 189, 0.48)',
+        padding: 20,
+        margin: 20,
+        borderRadius: 10,
+    },
+    quadro4: {
+        backgroundColor: 'rgb(104, 221, 189)',
+        padding: 20,
+        margin: 20,
+        borderRadius: 10,
+        marginTop: -35,
+        padding: 20,
+        height: 100,
+    },
+});
 
 export default styles;
+

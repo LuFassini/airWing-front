@@ -7,7 +7,6 @@ export default function QuemSomos() {
   return (
     <View style={styles.container}>
         <ScrollView>
-      <Image source={require('../../../assets/images/logo.png')} style={styles.logo}/>
       <EasyNavegation />
       <View style={styles.quadro}>
         <Text style={styles.titulo}>Descubra quem somos, através das viagens que compartilhamos.</Text>
@@ -17,7 +16,23 @@ export default function QuemSomos() {
       </View>
       <View style={styles.dve}>
         <Image source={require('../../../assets/image.png')} style={styles.image}/>
+        <View style={styles.quadro}>
+          <Text style={styles.titulo}>Descubra</Text>
+        </View>
+        <Image source={require('../../../assets/voe.png')} style={styles.image}/>
+        <View style={styles.quadro}>
+          <Text style={styles.titulo}>Voe</Text>
+          </View>
+          <Image source={require('../../../assets/encante-se.png')} style={styles.image}/>
+          <View style={styles.quadro}>
+            <Text style={styles.titulo}>Encante-se</Text>
+            </View>
       </View>
+      <View style={styles.quadro3}>
+        <Text style={styles.texto}>A AirWing busca liderar o mercado global de viagens personalizadas, oferecendo experiências memoráveis e inovadoras. Seu propósito é facilitar a exploração do mundo de forma acessível e sustentável, enriquecendo vidas e promovendo o desenvolvimento das comunidades locais.</Text>
+      </View>
+      <View style={styles.quadro4}></View>
+      
       </ScrollView>
     </View>
   );
