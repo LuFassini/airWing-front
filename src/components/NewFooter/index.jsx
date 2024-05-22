@@ -2,14 +2,16 @@ import { View, Text, Image } from "react-native";
 
 
 import styles from "./styles";
+import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const NewFooter = () => {
     return (
         <View style={styles.footer}>
             <View style={styles.icons}>
-                <Image source={require('./../../../assets/instagram-white-icon.png')} style={styles.icon} />
-                <Image source={require('./../../../assets/phone-xxl.png')} style={styles.icon} />
-                <Image source={require('./../../../assets/github.png')} style={styles.icon} />
+            <FontAwesomeIcon icon={faFacebook} style={styles.icon}/>
+            <FontAwesomeIcon icon={faInstagram} style={styles.icon}/>
+            <FontAwesomeIcon icon={faLinkedin} style={styles.icon}/>
                 </View>
                 <Text style={{color: "white"}}>© Todos os Direitos Reservados</Text>
         </View>
