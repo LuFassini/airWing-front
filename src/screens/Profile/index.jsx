@@ -3,12 +3,14 @@ import { Text, View } from "react-native";
 import styles from "./styles";
 import Title from "../../components/Title";
 import TouchButton from "../../components/TouchButton";
+import EasyNavegation from "../../components/EasyNavegation";
 
 export default function Profile({ route }) {
   const { data } = route.params;
 
   return (
     <View style={styles.container}>
+                          <EasyNavegation />
       <Title title="Profile" />
 
       <TouchButton route="Home" title="Go to Home" />

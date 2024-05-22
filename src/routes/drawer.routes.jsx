@@ -7,12 +7,14 @@ import Category from "../screens/Category";
 import { user } from "../data/Profile";
 import Form from "../screens/Form";
 import Termos from "../screens/Termos";
+import QuemSomos from "../screens/QuemSomos";
+
 
 const Drawer = createDrawerNavigator();
 
 const DrawerRoutes = () => {
-  return (
-    <Drawer.Navigator screenOptions={{ headerShown: true, drawerPosition:'right'}}> 
+  return (   
+    <Drawer.Navigator screenOptions={{ headerShown: true, drawerPosition:'rigth'}}> 
       <Drawer.Screen
         name="Home"
         component={Home}
@@ -20,7 +22,6 @@ const DrawerRoutes = () => {
           headerTitle: "",
           drawerIcon: ({ focused }) => (
             <Feather
-            
               name="home"
               size={24}
               color={focused ? "#131313" : "#D6D6D6"}
@@ -100,6 +101,26 @@ const DrawerRoutes = () => {
           ),
           
           drawerLabel: "Termos",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+
+        }}
+      />
+           <Drawer.Screen
+        name="Quem Somos"
+        component={QuemSomos}
+        options={{
+          headerTitle: "",
+          drawerIcon: ({ focused }) => (
+            <Feather
+            
+              name="users"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          
+          drawerLabel: "Quem Somos",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
 
