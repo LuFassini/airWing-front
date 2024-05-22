@@ -10,6 +10,7 @@ const EasyNavegation = () => {
 
   return (
     <View style={styles.nav}>
+      <View style={styles.centralize}>
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate("Home", "Go to Home" )}
@@ -17,7 +18,8 @@ const EasyNavegation = () => {
                 <FontAwesomeIcon icon={faHotel} style={styles.p}/>
         <Text style={styles.p}>Hoteis</Text>
       </TouchableOpacity>
-
+</View>
+      <View style={styles.centralize}>
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate("Category", "Go to Category" )}
@@ -25,6 +27,8 @@ const EasyNavegation = () => {
         <FontAwesomeIcon icon={faPlane} style={styles.p}/>
         <Text style={styles.p}>Voos</Text>
       </TouchableOpacity>
+      </View>
+      <View style={styles.centralize}>
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate("Profile", "Go to Profile")}
@@ -32,6 +36,7 @@ const EasyNavegation = () => {
                 <FontAwesomeIcon icon={faLuggageCart} style={styles.p}/>
         <Text style={styles.p}>Pacotes</Text>
       </TouchableOpacity>
+      </View>
     </View>
   );
 };
