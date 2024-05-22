@@ -10,33 +10,38 @@ const EasyNavegation = () => {
 
   return (
     <View style={styles.nav}>
-      <View style={styles.centralize}>
+      
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate("Home", "Go to Home" )}
       >
+        <View style={styles.centralize}>
                 <FontAwesomeIcon icon={faHotel} style={styles.p}/>
         <Text style={styles.p}>Hoteis</Text>
+        </View>
       </TouchableOpacity>
-</View>
-      <View style={styles.centralize}>
+
+      
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate("Category", "Go to Category" )}
       >
+        <View style={styles.centralize}>
         <FontAwesomeIcon icon={faPlane} style={styles.p}/>
         <Text style={styles.p}>Voos</Text>
+        </View>
       </TouchableOpacity>
-      </View>
-      <View style={styles.centralize}>
+     
+      
       <TouchableOpacity
         style={styles.button}
         onPress={() => navigation.navigate("Profile", "Go to Profile")}
       >
+        <View style={styles.centralize}>
                 <FontAwesomeIcon icon={faLuggageCart} style={styles.p}/>
         <Text style={styles.p}>Pacotes</Text>
+        </View>
       </TouchableOpacity>
-      </View>
     </View>
   );
 };

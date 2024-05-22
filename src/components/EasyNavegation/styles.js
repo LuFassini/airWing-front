@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
   nav:{
     flexDirection: 'row',
     justifyContent: 'space-between',
+    gap: 10,
     padding: 10,
     borderRadius: 5,
   },
@@ -20,10 +21,8 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
   centralize: {
-    alignItems: "center",
-    justifyContent: "center",
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "row",
   },
 });
 
