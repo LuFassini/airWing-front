@@ -8,6 +8,8 @@ import { user } from "../data/Profile";
 import Form from "../screens/Form";
 import Termos from "../screens/Termos";
 import QuemSomos from "../screens/QuemSomos";
+import Logo from "../components/Logo";
+
 
 
 const Drawer = createDrawerNavigator();
@@ -19,7 +21,9 @@ const DrawerRoutes = () => {
         name="Home"
         component={Home}
         options={{
-          headerTitle: "",
+          headerTitle: () => (
+            <Logo />
+          ),
           drawerIcon: ({ focused }) => (
             <Feather
               name="home"
@@ -39,7 +43,9 @@ const DrawerRoutes = () => {
         component={Profile}
         initialParams={{ data: user }}
         options={{
-          headerTitle: "",
+          headerTitle: () => (
+            <Logo />
+          ),
           drawerIcon: ({ focused }) => (
             <Feather
               name="user"
@@ -56,7 +62,9 @@ const DrawerRoutes = () => {
         name="Category"
         component={Category}
         options={{
-          headerTitle: "",
+          headerTitle: () => (
+            <Logo />
+          ),
           drawerIcon: ({ focused }) => (
             <Feather
               name="list"
@@ -73,7 +81,9 @@ const DrawerRoutes = () => {
         name="Form"
         component={Form}
         options={{
-          headerTitle: "",
+          headerTitle: () => (
+            <Logo />
+          ),
           drawerIcon: ({ focused }) => (
             <Feather
               name="edit-2"
@@ -90,7 +100,9 @@ const DrawerRoutes = () => {
         name="Termos"
         component={Termos}
         options={{
-          headerTitle: "",
+          headerTitle: () => (
+            <Logo />
+          ),
           drawerIcon: ({ focused }) => (
             <Feather
             
@@ -110,7 +122,9 @@ const DrawerRoutes = () => {
         name="Quem Somos"
         component={QuemSomos}
         options={{
-          headerTitle: "",
+          headerTitle: () => (
+            <Logo />
+          ),
           drawerIcon: ({ focused }) => (
             <Feather
             
