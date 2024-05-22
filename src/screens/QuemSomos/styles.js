@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
         height: '100%',
     },
     quadro: {
-        backgroundColor: 'rgb(203, 115, 228, 0.6)',
+        backgroundColor: 'rgba(203, 115, 228, 0.6)',
         padding: 20,
         margin: 20,
-        borderRadius: 10,
+        borderRadius: 5,
     },
     titulo: {
         color: '#000',
@@ -29,10 +29,11 @@ const styles = StyleSheet.create({
     },
     quadro2: {
         marginTop: -35,
-        backgroundColor: 'rgb(0, 181, 242, 0.3)',
+        backgroundColor: 'rgba(0, 181, 242, 0.3)',
         padding: 20,
         margin: 20,
-        borderRadius: 10,
+        borderRadius: 5,
+        marginTop : -23
     },
     image: {
         width: 300,
@@ -42,13 +43,13 @@ const styles = StyleSheet.create({
         marginLeft: 50,
     },
     quadro3: {
-        backgroundColor: 'rgb(104, 221, 189, 0.48)',
+        backgroundColor: 'rgba(104, 221, 189, 0.48)',
         padding: 20,
         margin: 20,
         borderRadius: 10,
     },
     quadro4: {
-        backgroundColor: 'rgb(104, 221, 189)',
+        backgroundColor: 'rgba(104, 221, 189)',
         padding: 20,
         margin: 20,
         borderRadius: 10,

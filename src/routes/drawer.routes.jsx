@@ -92,7 +92,7 @@ const DrawerRoutes = () => {
               color={focused ? "#131313" : "#D6D6D6"}
             />
           ),
-          drawerLabel: "Form",
+          drawerLabel: "Cadastro",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
         }}
