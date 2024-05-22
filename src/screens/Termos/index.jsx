@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text, Image } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
 import styles from './style'
+import EasyNavegation from '../../components/EasyNavegation'
 
 export default function Termos() {
     return (
@@ -14,6 +15,7 @@ export default function Termos() {
                         height: 115,
 
                     }} />
+                                        <EasyNavegation />
                 <View>
                     <View style={styles.borda}>
                         <Text style={styles.titulo}>Termos e condições</Text>
