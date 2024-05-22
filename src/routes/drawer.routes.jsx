@@ -9,6 +9,7 @@ import Form from "../screens/Form";
 import Termos from "../screens/Termos";
 import QuemSomos from "../screens/QuemSomos";
 import Logo from "../components/Logo";
+import CentralDeAjuda from "../screens/CentralDeAjuda";
 
 
 
@@ -106,7 +107,7 @@ const DrawerRoutes = () => {
           drawerIcon: ({ focused }) => (
             <Feather
             
-              name="info"
+              name="menu"
               size={24}
               color={focused ? "#131313" : "#D6D6D6"}
             />
@@ -135,6 +136,28 @@ const DrawerRoutes = () => {
           ),
           
           drawerLabel: "Quem Somos",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+
+        }}
+      />
+       <Drawer.Screen
+        name="Central de Ajuda"
+        component={CentralDeAjuda}
+        options={{
+          headerTitle: () => (
+            <Logo />
+          ),
+          drawerIcon: ({ focused }) => (
+            <Feather
+            
+              name="info"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          
+          drawerLabel: "Central de ajuda",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
 
