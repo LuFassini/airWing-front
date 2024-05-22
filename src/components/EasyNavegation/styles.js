@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
     borderRadius: 5,
   },
   p: {
-    color: "#130799"
+    color: "#130799",
+    fontSize: 15,
   },
 });
 
