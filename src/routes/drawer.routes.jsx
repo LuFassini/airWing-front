@@ -185,6 +185,25 @@ const DrawerRoutes = () => {
           drawerInactiveTintColor: "#D6D6D6",
         }}
       />
+      <Drawer.Screen
+        name="Detalhes"
+        component={Detalhes}
+        options={{
+          headerTitle: () => (
+            <Logo left={260}/>
+          ),
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="package"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Detalhes",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
     </Drawer.Navigator>
   );
 };
