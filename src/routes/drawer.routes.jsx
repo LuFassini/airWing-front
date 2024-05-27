@@ -17,8 +17,7 @@ const Drawer = createDrawerNavigator();
 
 const DrawerRoutes = () => {
   return (   
-    <Drawer.Navigator screenOptions={{ headerShown: true, drawerPosition: 'right', // Defina 'left' ou 'right' aqui
-    drawerType: 'slide', // Defina 'front' ou 'back' aqui
+    <Drawer.Navigator screenOptions={{ headerShown: true, drawerPosition: 'right',
 }}> 
       <Drawer.Screen
         name="Home"
