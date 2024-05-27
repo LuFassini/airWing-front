@@ -11,10 +11,12 @@ const styles = StyleSheet.create({
         height: '100%',
     },
     quadro: {
-        backgroundColor: 'rgba(203, 115, 228, 0.6)',
+        backgroundColor: 'rgba(104,221,189, 0.6)',
         padding: 20,
         margin: 20,
+        marginBottom: 10,
         borderRadius: 5,
+        fontWeight: 'bold', 
     },
     titulo: {
         color: '#000',
@@ -28,35 +30,40 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     quadro2: {
-        marginTop: -35,
-        backgroundColor: 'rgba(0, 181, 242, 0.3)',
+        marginTop: 50,
+        backgroundColor: 'rgba(231, 157, 252, 0.6)',
         padding: 20,
-        margin: 20,
         borderRadius: 5,
-        marginTop : -23
+        
     },
+
     image: {
-        width: 300,
+        width: 418,
         height: 300,
         margin: 20,
         borderRadius: 10,
-        marginLeft: 50,
+        marginLeft: 40,
     },
     quadro3: {
-        backgroundColor: 'rgba(104, 221, 189, 0.48)',
+        marginTop: 50,
+        backgroundColor: 'rgba(231, 157, 252, 0.6)',
         padding: 20,
-        margin: 20,
-        borderRadius: 10,
+        borderRadius: 5,
     },
     quadro4: {
-        backgroundColor: 'rgba(104, 221, 189)',
+        marginTop: 50,
+        backgroundColor: 'rgba(231, 157, 252, 0.6)',
         padding: 20,
-        margin: 20,
-        borderRadius: 10,
-        marginTop: -35,
-        padding: 20,
-        height: 100,
+        borderRadius: 5,
     },
+    dve: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 30,
+        width: 400
+        
+    }
 });
 
 export default styles;

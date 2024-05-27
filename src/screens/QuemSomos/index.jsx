@@ -15,7 +15,7 @@ export default function QuemSomos() {
         <Text style={styles.texto}>A AirWing é uma empresa de turismo líder, oferecendo experiências excepcionais e serviços de alta qualidade globalmente. Com diversos destinos e pacotes, garante atendimento personalizado e conveniente através de inovação tecnológica, priorizando conforto, confiança e excelência.</Text>
       </View>
       <View style={styles.dve}>
-        <Image source={require('../../../assets/image.png')} style={styles.image}/>
+        <Image source={require('../../../assets/desenho.png')} style={styles.image}/>
         <View style={styles.quadro}>
           <Text style={styles.titulo}>Descubra</Text>
         </View>
