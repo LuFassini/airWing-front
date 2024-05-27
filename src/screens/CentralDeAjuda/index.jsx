@@ -1,8 +1,7 @@
 import React from 'react'
 import { View, Text, ScrollView, TextInput } from 'react-native'
-
-import styles from './style'
 import EasyNavegation from '../../components/EasyNavegation'
+import styles from "../CentralDeAjuda/style.js";
 
 export default function CentralDeAjuda() {
 
@@ -13,31 +12,32 @@ export default function CentralDeAjuda() {
                 <EasyNavegation />
                 <View>
                     <View style={styles.borda}>
-
                         <Text style={styles.titulo}>Como podemos ajudar?</Text>
                     </View>
-                    <Text styles={styles.text1}>Digite aqui sua pergunta ou palavra-chave.</Text>
-                    <Text style={styles.linha}>     ______________________________________________</Text>
-
+                    
+                    <Text style={styles.texto1}>Digite aqui sua pergunta ou palavra-chave.</Text>
+                    
                       <View style={styles.perguntas}>
                     <TextInput
                         style={styles.input}
-                        placeholder="Deixe sua dúvida:"
+                        placeholder="Deixe sua dúvida aqui:"
                         onChangeText={text => onChangeText(text)}
                     />
-                     <Text style={styles.subTitulo}>Perguntas frequentes:</Text>
-                     <Text style={styles.linha}>     ______________________________________________</Text>
 
-                    <Text>Quer cancelar sua compra? </Text>
-                    <Text style={styles.linha}>     ________________________________________________</Text>
+                     <Text style={styles.subTitulo}>Perguntas frequentes...</Text>
+                     <Text style={styles.linha1}>________________________________________________</Text>
 
-                    <Text>A companhia aérea cancelou meu voo.E agora? </Text>
-                    <Text style={styles.linha}>   ________________________________________________</Text>
+                    <Text style={styles.texto2}>Quer cancelar sua compra? </Text>
+                    <Text style={styles.linha2}>________________________________________________</Text>
 
-                    <Text>Como realizo o check-in do meu voo no embarque? </Text>
-                    <Text style={styles.linha}> ___________________________________________________</Text>
+                    <Text style={styles.texto3}>A companhia aérea cancelou meu voo, e agora?</Text>
+                    <Text style={styles.linha3}>________________________________________________</Text>
+
+                    <Text style={styles.texto4}>Como realizo o check-in do meu voo no embarque?</Text>
+                    <Text style={styles.linha4}>________________________________________________</Text>
                     </View>
                 </View>
+
             </ScrollView>
         </View>
     )

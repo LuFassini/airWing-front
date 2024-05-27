@@ -32,7 +32,7 @@ export default function QuemSomos() {
         <Text style={styles.texto}>A AirWing busca liderar o mercado global de viagens personalizadas, oferecendo experiências memoráveis e inovadoras. Seu propósito é facilitar a exploração do mundo de forma acessível e sustentável, enriquecendo vidas e promovendo o desenvolvimento das comunidades locais.</Text>
       </View>
       <View style={styles.quadro4}></View>
-      
+
       </ScrollView>
     </View>
   );
