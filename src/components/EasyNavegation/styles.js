@@ -20,6 +20,11 @@ const styles = StyleSheet.create({
     color: "#130799",
     fontSize: 25,
   },
+  icon: {
+    color: "#130799",
+    width: 30,
+    height: 30,
+  },
   centralize: {
     display: "flex",
     flexDirection: "row",

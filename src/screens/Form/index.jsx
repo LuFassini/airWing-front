@@ -131,7 +131,7 @@ export default function Form() {
             <Icon name={showPassword ? "lock" : "lock-open"} />
           </TouchableOpacity>
         </View>
-        <TouchableOpacity onPress={handleUser} style={styles.button} >
+        <TouchableOpacity onPress={handleUser} style={styles.button2} >
           <Icon name={"lock"} />
         </TouchableOpacity>
         {
