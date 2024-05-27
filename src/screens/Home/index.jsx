@@ -12,13 +12,7 @@ export default function Home() {
     <ScrollView>
     <View style={styles.container}>
     <EasyNavegation />
-       <Image source={require('../../../assets/images/logo.png')} 
-        style={{ 
-          marginTop: 30,
-           width: 100, 
-           height: 115,
-           
-           }} />
+       
     </View>
     </ScrollView>
   );
