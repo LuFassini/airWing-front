@@ -1,4 +1,4 @@
-import { Button, Text, TextInput, View, TouchableOpacity, Image, ScrollView } from "react-native";
+import { Button, Text, TextInput, View, TouchableOpacity, ScrollView } from "react-native";
 import styles from "./styles";
 import Title from "../../components/Title";
 import TouchButton from "../../components/TouchButton";
@@ -75,13 +75,7 @@ export default function Form() {
   return (
     <View style={styles.container}>
        <ScrollView >
-                     <Image source={require('../../../assets/images/logo.png')}
-                    style={{
-                        marginTop: 30,
-                        width: 100,
-                        height: 115,
-
-                    }} />
+                     
                     <EasyNavegation />
       <Text style={styles.title}> Cadastro </Text>
 

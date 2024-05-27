@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image, ScrollView, TextInput } from 'react-native'
+import { View, Text, ScrollView, TextInput } from 'react-native'
 
 import styles from './style'
 import EasyNavegation from '../../components/EasyNavegation'
@@ -9,13 +9,7 @@ export default function CentralDeAjuda() {
     return (
         <View style={styles.container}>
             <ScrollView >
-                <Image source={require('../../../assets/images/logo.png')}
-                    style={{
-                        marginTop: 30,
-                        width: 100,
-                        height: 115,
-
-                    }} />
+                
                 <EasyNavegation />
                 <View>
                     <View style={styles.borda}>
