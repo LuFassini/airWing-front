@@ -9,7 +9,7 @@ import Logo from "../Logo";
 const NewFooter = () => {
     return (
         <View style={styles.footer}>
-            <Logo />
+            <Logo left={27}/>
             <View style={styles.icons}>
             <FontAwesomeIcon icon={faFacebook} style={styles.icon}/>
             <FontAwesomeIcon icon={faInstagram} style={styles.icon}/>

@@ -26,7 +26,7 @@ const DrawerRoutes = () => {
         
         options={{
           headerTitle: () => (
-            <Logo />
+            <Logo left={260}/>
           ),
           drawerIcon: ({ focused }) => (
             <Feather
@@ -67,7 +67,7 @@ const DrawerRoutes = () => {
         component={Category}
         options={{
           headerTitle: () => (
-            <Logo />
+            <Logo left={260}/>
           ),
           drawerIcon: ({ focused }) => (
             <Feather
@@ -86,7 +86,7 @@ const DrawerRoutes = () => {
         component={Form}
         options={{
           headerTitle: () => (
-            <Logo />
+            <Logo left={260}/>
           ),
           drawerIcon: ({ focused }) => (
             <Feather
@@ -105,7 +105,7 @@ const DrawerRoutes = () => {
         component={Termos}
         options={{
           headerTitle: () => (
-            <Logo />
+            <Logo left={260}/>
           ),
           drawerIcon: ({ focused }) => (
             <Feather
@@ -127,7 +127,7 @@ const DrawerRoutes = () => {
         component={QuemSomos}
         options={{
           headerTitle: () => (
-            <Logo />
+            <Logo left={260}/>
           ),
           drawerIcon: ({ focused }) => (
             <Feather
@@ -149,7 +149,7 @@ const DrawerRoutes = () => {
         component={CentralDeAjuda}
         options={{
           headerTitle: () => (
-            <Logo />
+            <Logo left={260}/>
           ),
           drawerIcon: ({ focused }) => (
             <Feather
@@ -171,7 +171,7 @@ const DrawerRoutes = () => {
         component={Pacotes}
         options={{
           headerTitle: () => (
-            <Logo />
+            <Logo left={260}/>
           ),
           drawerIcon: ({ focused }) => (
             <Feather
