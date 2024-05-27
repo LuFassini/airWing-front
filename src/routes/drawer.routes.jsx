@@ -12,7 +12,7 @@ import Logo from "../components/Logo";
 import CentralDeAjuda from "../screens/CentralDeAjuda";
 import Pacotes from "../screens/Pacotes"
 import Detalhes from "../screens/Detalhes";
-
+import Equipe from "../screens/Equipe";
 
 
 const Drawer = createDrawerNavigator();
@@ -195,7 +195,7 @@ const DrawerRoutes = () => {
           ),
           drawerIcon: ({ focused }) => (
             <Feather
-              name="package"
+              name="briefcase"
               size={24}
               color={focused ? "#131313" : "#D6D6D6"}
             />
@@ -205,6 +205,26 @@ const DrawerRoutes = () => {
           drawerInactiveTintColor: "#D6D6D6",
         }}
       />
+       <Drawer.Screen
+        name="Equipe"
+        component={Equipe}
+        options={{
+          headerTitle: () => (
+            <Logo left={260}/>
+          ),
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="users"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Equipe",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
+     
     </Drawer.Navigator>
   );
 };

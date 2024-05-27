@@ -27,7 +27,8 @@ export default function pacotes() {
 
         <View style={styles.dve}>
         <Image source={require('../../../assets/integral.png')} style={styles.image}/>
-      </View>
+        </View>
+
         <View style={styles.quadro4}>
 
           <Text style={styles.titulo}>Turismo Noturno</Text>
@@ -36,6 +37,7 @@ export default function pacotes() {
           <View style={styles.dve}>
           <Image source={require('../../../assets/noturno.png')} style={styles.image}/>
           </View>
+
 
           </ScrollView>
        
