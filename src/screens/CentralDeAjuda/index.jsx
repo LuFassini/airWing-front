@@ -16,7 +16,7 @@ export default function CentralDeAjuda() {
 
                         <Text style={styles.titulo}>Como podemos ajudar?</Text>
                     </View>
-                    <Text>Digite aqui sua pergunta ou palavra-chave.</Text>
+                    <Text styles={styles.text1}>Digite aqui sua pergunta ou palavra-chave.</Text>
                     <Text style={styles.linha}>     ______________________________________________</Text>
 
                       <View style={styles.perguntas}>

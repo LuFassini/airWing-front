@@ -7,8 +7,7 @@ const styles = StyleSheet.create({
         padding: 20
     },
     borda: {
-        backgroundColor: "#68DDBD99",
-        opacity: 0.6,
+        backgroundColor: "rgba(104, 221, 189, 0.6)",
         borderBottomColor: '#130799',
         paddingBottom: 10,
         width: 310,
@@ -29,6 +28,9 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center"
+    },
+    text1: {
+        marginRight: 40,
     },
     linha: {
         fontSize: 16,
