@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   },
   p: {
     color: "#130799",
-    fontSize: 15,
+    fontSize: 25,
   },
   centralize: {
     display: "flex",
