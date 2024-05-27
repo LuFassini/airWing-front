@@ -11,6 +11,7 @@ import QuemSomos from "../screens/QuemSomos";
 import Logo from "../components/Logo";
 import CentralDeAjuda from "../screens/CentralDeAjuda";
 import Pacotes from "../screens/Pacotes"
+import Detalhes from "../screens/Detalhes";
 
 
 

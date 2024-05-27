@@ -3,7 +3,7 @@ import styles from "./styles";
 import { View, Image, Text } from "react-native";
 import EasyNavegation from "../../components/EasyNavegation";
 
-export default function detalhes() {
+export default function Detalhes() {
   return (
     <View style={styles.container}>
         <ScrollView>
