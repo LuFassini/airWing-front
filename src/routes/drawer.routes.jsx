@@ -10,6 +10,7 @@ import Termos from "../screens/Termos";
 import QuemSomos from "../screens/QuemSomos";
 import Logo from "../components/Logo";
 import CentralDeAjuda from "../screens/CentralDeAjuda";
+import Pacotes from "../screens/Pacotes"
 
 
 
@@ -163,6 +164,25 @@ const DrawerRoutes = () => {
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
 
+        }}
+      />
+      <Drawer.Screen
+        name="Pacotes"
+        component={Pacotes}
+        options={{
+          headerTitle: () => (
+            <Logo />
+          ),
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="package"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Pacotes",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
         }}
       />
     </Drawer.Navigator>

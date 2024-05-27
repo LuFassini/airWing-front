@@ -25,8 +25,7 @@ const styles = StyleSheet.create({
         marginTop: 10
     },
     borda:{
-        backgroundColor:"#E79DFC",
-        opacity: 0.6,
+        backgroundColor:"rgba(231, 157, 252, 0.6)",
         borderBottomColor: '#130799',
         paddingBottom: 10,
         width:310,
@@ -38,8 +37,7 @@ const styles = StyleSheet.create({
         marginLeft:28
     },
     borda2:{
-        backgroundColor:"#4ECDF8",
-        opacity: 0.5,
+        backgroundColor: 'rgba(78, 205, 248, 0.5)',
         paddingBottom: 10,
         width:310,
         borderRadius: 10,

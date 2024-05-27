@@ -55,6 +55,14 @@ const styles = StyleSheet.create({
   popUp: {
  color: '#209F7C',
   },
+  title: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    textAlign: 'center',
+    marginRight: 50,
+    color: '#00B5F2'
+  }
 });
 
 export default styles;

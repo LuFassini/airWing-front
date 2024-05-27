@@ -12,7 +12,7 @@ const Logo = () => {
         style={{
           width: 70,
           height: 70,
-          marginLeft: 15,
+          marginLeft: 260,
         }}
       />
     </TouchableOpacity>

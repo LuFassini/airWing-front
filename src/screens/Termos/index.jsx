@@ -8,13 +8,7 @@ export default function Termos() {
     return (
         <View style={styles.container}>
             <ScrollView >
-                <Image source={require('../../../assets/images/logo.png')}
-                    style={{
-                        marginTop: 30,
-                        width: 100,
-                        height: 115,
-
-                    }} />
+             
                                         <EasyNavegation />
                 <View>
                     <View style={styles.borda}>

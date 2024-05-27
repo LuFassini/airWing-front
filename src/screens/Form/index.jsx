@@ -1,4 +1,4 @@
-import { Button, Text, TextInput, View, TouchableOpacity, Image, ScrollView } from "react-native";
+import { Button, Text, TextInput, View, TouchableOpacity, ScrollView } from "react-native";
 import styles from "./styles";
 import Title from "../../components/Title";
 import TouchButton from "../../components/TouchButton";
@@ -76,18 +76,13 @@ export default function Form() {
   return (
     <View style={styles.container}>
 
-                     <Image source={require('../../../assets/images/logo.png')}
-                    style={{
-                        marginTop: 30,
-                        width: 100,
-                        height: 115,
+       <ScrollView >
+                     
 
-                    }} />
                     <EasyNavegation />
-      <Title title="Form" />
+      <Text style={styles.title}> Cadastro </Text>
 
       <View style={styles.user}>
-        <Text style={styles.textSubTitle}>Voe para varios lugares!</Text>
         <TextInput style={styles.input} placeholder="Nome Completo" onChangeText={setName} value={name} />
         <TextInput style={styles.input} placeholder="Ano de Nascimento" onChangeText={setBirthYear} value={birthYear} />
         <TextInput style={styles.input} placeholder="Email" onChangeText={setEmail} value={email} />
@@ -129,7 +124,7 @@ export default function Form() {
         }
         }
       />
-      <Text>FEMEA</Text>
+      <Text>Femea</Text>
         <View style={styles.passwordarea}>
           <TextInput style={styles.inputsenha} placeholder="Senha" secureTextEntry={showPassword} onChangeText={setPassword} value={password} />
           <TouchableOpacity onPress={showHidePassword} style={styles.button}>
@@ -144,6 +139,8 @@ export default function Form() {
         }
       </View>
       <NewFooter />
+    </ScrollView>
     </View>
   );
 }
+
