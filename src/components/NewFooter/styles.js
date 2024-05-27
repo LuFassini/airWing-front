@@ -3,19 +3,16 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     footer: {
         width: "100%",
-        height: 130,
-        backgroundColor: "black",
+        height: "16%",
+        backgroundColor: 'rgba(104, 221, 189, 0.48)',
         justifyContent: "center",
         alignItems: "center",
-        bottom: 0,
-        position: "absolute",
     },
     icons: {
         flexDirection: "row",
         justifyContent: "space-around",
-        height: "50%",
+        height: "10%",
         width: "30%",
-        margin: 0,
     },
     icon: {
         width: 20,

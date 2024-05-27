@@ -12,8 +12,6 @@ const Logo = () => {
         style={{
           width: 70,
           height: 70,
-          marginTop: 50,
-          marginBottom: 45,
           marginLeft: 15,
         }}
       />

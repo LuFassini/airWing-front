@@ -7,6 +7,7 @@ import { TextInputMask } from "react-native-masked-text";
 import { Icon } from "@rneui/base";
 import { RadioButton } from 'react-native-paper';
 import EasyNavegation from "../../components/EasyNavegation";
+import NewFooter from "../../components/NewFooter";
 export default function Form() {
   const [name, setName] = useState("");
   const [birthYear, setBirthYear] = useState("");
@@ -74,7 +75,7 @@ export default function Form() {
   
   return (
     <View style={styles.container}>
-       <ScrollView >
+
                      <Image source={require('../../../assets/images/logo.png')}
                     style={{
                         marginTop: 30,
@@ -142,7 +143,7 @@ export default function Form() {
           popUp && <Text style={styles.popUp}>Usuário cadastrado com sucesso!</Text>
         }
       </View>
-      </ScrollView>
+      <NewFooter />
     </View>
   );
 }
