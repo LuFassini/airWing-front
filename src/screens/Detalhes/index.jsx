@@ -2,6 +2,7 @@ import { ScrollView } from "react-native-gesture-handler/lib/commonjs";
 import styles from "./styles";
 import { View, Image, Text } from "react-native";
 import EasyNavegation from "../../components/EasyNavegation";
+import NewFooter from "../../components/NewFooter";
 
 export default function Detalhes() {
   return (
@@ -50,6 +51,7 @@ export default function Detalhes() {
           <Image source={require('../../../assets/noturno.png')} style={styles.image}/>
           </View>
 
+          <NewFooter />
           </ScrollView>
        
     </View>

@@ -6,6 +6,7 @@ import { user } from "../../data/Profile";
 import TouchButton from "../../components/TouchButton";
 import { ScrollView } from "react-native-gesture-handler";
 import EasyNavegation from "../../components/EasyNavegation";
+import NewFooter from "../../components/NewFooter";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <View style={styles.container}>
     <EasyNavegation />
        
+    <NewFooter />
     </View>
     </ScrollView>
   );

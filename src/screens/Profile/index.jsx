@@ -4,6 +4,7 @@ import styles from "./styles";
 import Title from "../../components/Title";
 import TouchButton from "../../components/TouchButton";
 import EasyNavegation from "../../components/EasyNavegation";
+import NewFooter from "../../components/NewFooter";
 
 export default function Profile({ route }) {
   const { data } = route.params;
@@ -24,6 +25,7 @@ export default function Profile({ route }) {
         <Text style={styles.text}>{data.phone}</Text>
         <Text style={styles.text}>{data.address.city}</Text>
         <Text style={styles.text}>{data.address.state}</Text>
+        <NewFooter />
       </View>
     </View>
   );

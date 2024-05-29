@@ -2,6 +2,7 @@ import { ScrollView } from "react-native-gesture-handler/lib/commonjs";
 import styles from "./styles";
 import { View, Image, Text } from "react-native";
 import EasyNavegation from "../../components/EasyNavegation";
+import NewFooter from "../../components/NewFooter";
 
 export default function QuemSomos() {
   return (
@@ -33,6 +34,7 @@ export default function QuemSomos() {
       </View>
       <View style={styles.quadro4}></View>
 
+      <NewFooter />
       </ScrollView>
     </View>
   );
