@@ -73,7 +73,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#D9D9D9',
         padding: 20,
         borderRadius: 5,
-        height: 200
+        height: 200,
+        marginBottom: 30
+
     },
     quadro4: {
         marginTop: 50,
@@ -100,7 +102,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginTop: 30,
-        marginBottom: 30,
         width: 400
         
     }
