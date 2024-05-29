@@ -49,7 +49,7 @@ const DrawerRoutes = () => {
         initialParams={{ data: user }}
         options={{
           headerTitle: () => (
-            <Logo />
+            <Logo left={260}/>
           ),
           drawerIcon: ({ focused }) => (
             <Feather
