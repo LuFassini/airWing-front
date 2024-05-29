@@ -7,8 +7,8 @@ const styles = StyleSheet.create({
         padding: 20
     },
     borda: {
+        marginTop: 20,
         backgroundColor: "rgba(104, 221, 189, 0.6)",
-        borderBottomColor: '#130799',
         paddingBottom: 10,
         width: 310,
         borderRadius: 10,
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     texto1: {
         fontSize: 16,
         marginBottom: 10,
-        marginTop: 10,
+        marginTop: 15,
         marginLeft: 33,
     },
     linha1: {
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         marginBottom: 10,
         marginTop: 10,
-        marginRight: 90,
+        marginRight: 140,
     },
     texto3: {
         fontSize: 16,
@@ -89,7 +89,8 @@ const styles = StyleSheet.create({
         marginTop: 10,
         alignItems: "center",
         justifyContent: "center",
-        textAlign: "center"
+        textAlign: "center",
+        marginRight: 10,
     },
     input: {
         height: 40,
@@ -101,6 +102,7 @@ const styles = StyleSheet.create({
         marginRight: 35,
     },
     perguntas:{
+        marginTop: 15,
         marginLeft: 28,
         alignItems:'center',
         justifyContent:'center',
