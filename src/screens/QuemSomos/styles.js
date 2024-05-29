@@ -55,6 +55,13 @@ const styles = StyleSheet.create({
         marginTop: -35,
         height: 100,
     },
+    titulo1: {
+        color: '#000',
+        fontSize: 20,
+        textAlign: 'center',
+        fontWeight: 'bold', 
+        backgroundColor: 'rgba (107,216,253, 0.3)'
+    }
 });
 
 export default styles;

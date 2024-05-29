@@ -18,15 +18,15 @@ export default function QuemSomos() {
       <View style={styles.dve}>
         <Image source={require('../../../assets/desenho.png')} style={styles.image}/>
         <View style={styles.quadro}>
-          <Text style={styles.titulo}>Descubra</Text>
+          <Text style={styles.titulo1}>Descubra</Text>
         </View>
         <Image source={require('../../../assets/voe.png')} style={styles.image}/>
         <View style={styles.quadro}>
-          <Text style={styles.titulo}>Voe</Text>
+          <Text style={styles.titulo1}>Voe</Text>
           </View>
           <Image source={require('../../../assets/encante-se.png')} style={styles.image}/>
           <View style={styles.quadro}>
-            <Text style={styles.titulo}>Encante-se</Text>
+            <Text style={styles.titulo1}>Encante-se</Text>
             </View>
       </View>
       <View style={styles.quadro3}>
