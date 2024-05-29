@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         width: '100%',
         height: '100%',
+        flex: 1,
     },
     quadro: {
         backgroundColor: 'rgba(104,221,189, 0.6)',
@@ -20,6 +21,12 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         borderRadius: 5,
         fontWeight: 'bold', 
+    },
+    tituloh: {
+        color: '#000',
+        fontSize: 35,
+        textAlign: 'center',
+        fontWeight: 'bold'
     },
     titulO: {
         color: '#209F7C',
@@ -48,7 +55,7 @@ const styles = StyleSheet.create({
     },
     hoteis: {
         color: '#130799',
-        fontSize: 30,
+        fontSize: 40,
         textAlign: 'center',
         fontWeight: 'bold', 
         marginTop: 10

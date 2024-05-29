@@ -33,11 +33,7 @@ export default function Detalhes() {
           <Text style={styles.text1}> Preço:  R$ 25.000 </Text>
         </View>
 
-        <View style={styles.dve}>
-           <Image source={require('../../../assets/majestoso.png')} style={styles.image}/>
-        </View>
-
-        <View style={styles.hoteis}>
+      <View style={styles.hoteis}>
         <Text style={styles.hoteis}> Hotéis </Text>
       </View>
 
@@ -45,8 +41,16 @@ export default function Detalhes() {
         <Text style={styles.line}> _____________________________________ </Text>
       </View>
 
+        <View style={styles.dve}>
+           <Image source={require('../../../assets/majestoso.png')} style={styles.image}/>
+        </View>
+
+     
+
+      
+
         <View style={styles.quadro3}>
-          <Text style={styles.titulo}> Barrière Le Majestic </Text>
+          <Text style={styles.tituloh}> Barrière Le Majestic </Text>
           <Text style={styles.text1}> Entrada: 01/06/2024</Text>
           <Text style={styles.text1}> Saida: 30/06/2024 </Text>
           <Text style={styles.text1}> Preço:  R$ 13.967 </Text>

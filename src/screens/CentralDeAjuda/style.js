@@ -2,7 +2,6 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         backgroundColor: '#fff',
         padding: 20
     },
@@ -16,7 +15,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        marginLeft: 28
+        marginLeft: 45,
     },
     titulo: {
         fontSize: 20,
@@ -33,7 +32,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         marginBottom: 10,
         marginTop: 15,
-        marginLeft: 33,
+        marginLeft: 50,
     },
     linha1: {
         fontSize: 16,
@@ -59,7 +58,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         marginBottom: 10,
         marginTop: 10,
-        marginRight: 10,
+        marginLeft: 3,
     },
     linha3: {
         fontSize: 16,
@@ -72,7 +71,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         marginBottom: 10,
         marginTop: 10,
-        marginRight: 10,
+        marginLeft: 20,
     },
     linha4: {
         fontSize: 16,

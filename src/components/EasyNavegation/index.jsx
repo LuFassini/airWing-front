@@ -35,7 +35,7 @@ const EasyNavegation = () => {
       
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate("Profile", "Go to Profile")}
+        onPress={() => navigation.navigate("Pacotes", "Go to Pacotes")}
       >
         <View style={styles.centralize}>
                 <FontAwesomeIcon icon={faLuggageCart} style={styles.icon}/>

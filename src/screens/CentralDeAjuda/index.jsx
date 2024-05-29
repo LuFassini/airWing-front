@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, ScrollView, TextInput } from 'react-native'
 import EasyNavegation from '../../components/EasyNavegation'
 import styles from "../CentralDeAjuda/style.js";
-import NewFooter from '../../components/NewFooter/index.jsx';
+import NewFooter from '../../components/NewFooter'
 
 export default function CentralDeAjuda() {
 
@@ -21,7 +21,7 @@ export default function CentralDeAjuda() {
                       <View style={styles.perguntas}>
                     <TextInput
                         style={styles.input}
-                        placeholder="Deixe sua dúvida aqui:"
+                        placeholder="Deixe sua dúvida aqui..."
                         onChangeText={text => onChangeText(text)}
                     />
 
@@ -38,6 +38,7 @@ export default function CentralDeAjuda() {
                     <Text style={styles.linha4}>________________________________________________</Text>
                     </View>
                 </View>
+
                 <NewFooter />
             </ScrollView>
         </View>
