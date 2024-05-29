@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
         color: '#130799',
         opacity: 1,
         marginBottom: 10,
-        marginTop:11,
+        marginTop:20,
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center"
@@ -22,15 +22,15 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#0019FA',
         marginBottom: 10,
-        marginTop: 10
+        marginTop: 25
     },
     borda:{
         backgroundColor:"rgba(231, 157, 252, 0.6)",
         borderBottomColor: '#130799',
         paddingBottom: 10,
         width:310,
-        borderRadius: 10,
-        marginBottom: 10,
+        borderRadius: 20,
+        marginTop: 30,
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
@@ -57,12 +57,14 @@ const styles = StyleSheet.create({
         marginTop:11,
         alignItems: "center",
         justifyContent: "center",
-        textAlign: "center"
+        textAlign: "center", 
+        width: -70
     },
     info: {
         fontSize: 16,
         color: '#000',
-        marginBottom: 10
+        marginBottom: 10,
+        marginTop: 10
     },
     linha: {
         fontSize: 16,
