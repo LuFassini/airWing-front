@@ -11,7 +11,7 @@ export default function Detalhes() {
       <EasyNavegation />
 
       <View style={styles.quadro}>
-        <Text style={styles.titulo}>Meu pedido</Text>
+        <Text style={styles.titulO}>Meu pedido</Text>
       </View>
 
       <View style={styles.voos}>
@@ -26,30 +26,34 @@ export default function Detalhes() {
         <Image source={require('../../../assets/paris.png')} style={styles.image}/>
       </View>
 
-      <View style={styles.quadro2}>
-        <Text style={styles.titulo}>Turismo Matinal</Text>
-      </View>
-
-
         <View style={styles.quadro3}>
-          <Text style={styles.titulo}> Paris </Text>
-          <Text style={styles.text}> 
-          Ida: 01/06/2024
-          Volta: 30/06/2024
-          Preço:  R$ 25.000 </Text>
+          <Text style={styles.titulo}> França </Text>
+          <Text style={styles.text1}> Ida: 01/06/2024 </Text>
+          <Text style={styles.text1}> Volta: 30/06/2024 </Text>
+          <Text style={styles.text1}> Preço:  R$ 25.000 </Text>
         </View>
 
         <View style={styles.dve}>
-        <Image source={require('../../../assets/integral.png')} style={styles.image}/>
+           <Image source={require('../../../assets/majestoso.png')} style={styles.image}/>
+        </View>
+
+        <View style={styles.hoteis}>
+        <Text style={styles.hoteis}> Hotéis </Text>
       </View>
-        <View style={styles.quadro4}>
 
-          <Text style={styles.titulo}>Turismo Noturno</Text>
-          </View>
+      <View style={styles.line}>
+        <Text style={styles.line}> _____________________________________ </Text>
+      </View>
 
-          <View style={styles.dve}>
-          <Image source={require('../../../assets/noturno.png')} style={styles.image}/>
-          </View>
+        <View style={styles.quadro3}>
+          <Text style={styles.titulo}> Barrière Le Majestic </Text>
+          <Text style={styles.text1}> Entrada: 01/06/2024</Text>
+          <Text style={styles.text1}> Saida: 30/06/2024 </Text>
+          <Text style={styles.text1}> Preço:  R$ 13.967 </Text>
+        </View>
+        
+
+          
 
           <NewFooter />
           </ScrollView>
