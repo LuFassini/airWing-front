@@ -3,7 +3,7 @@ import { Feather } from "@expo/vector-icons";
 
 import Home from "../screens/Home";
 import Profile from "../screens/Profile";
-import Category from "../screens/Category";
+import Voos from "../screens/Voos";
 import { user } from "../data/Profile";
 import Form from "../screens/Form";
 import Termos from "../screens/Termos";
@@ -64,20 +64,20 @@ const DrawerRoutes = () => {
         }}
       />
       <Drawer.Screen
-        name="Category"
-        component={Category}
+        name="Voos"
+        component={Voos}
         options={{
           headerTitle: () => (
             <Logo left={260}/>
           ),
           drawerIcon: ({ focused }) => (
             <Feather
-              name="list"
+              name="send"
               size={24}
               color={focused ? "#131313" : "#D6D6D6"}
             />
           ),
-          drawerLabel: "Categorias",
+          drawerLabel: "Voos",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
         }}
