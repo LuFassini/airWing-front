@@ -25,8 +25,9 @@ export default function Profile({ route }) {
         <Text style={styles.text}>{data.phone}</Text>
         <Text style={styles.text}>{data.address.city}</Text>
         <Text style={styles.text}>{data.address.state}</Text>
-        <NewFooter />
+
       </View>
+      <NewFooter />
     </View>
   );
 }
