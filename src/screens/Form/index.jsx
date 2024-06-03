@@ -78,7 +78,7 @@ export default function Form() {
                      
 
       <EasyNavegation />
-      <Text style={styles.title}> Cadastro </Text>
+      <Text style={styles.titles}> Cadastro </Text>
 
       <View style={styles.user}>
         <TextInput style={styles.input} placeholder="Nome Completo" onChangeText={setName} value={name} />
