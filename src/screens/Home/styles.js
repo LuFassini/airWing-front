@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
         height: '100%',
         flex: 1,
     },
+
     quadro: {
         backgroundColor: 'rgba(203, 115, 228, 0.45)',
         padding: 20,
@@ -34,8 +35,9 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 20
+        fontSize: 25
     },
+
     input2: {
         width: 370,
         marginLeft: 22,
@@ -49,6 +51,9 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
     },
+    Inputs:{
+        marginTop: 40
+    },
     inputM: {
         width: 180,
         marginLeft: 22,
@@ -57,17 +62,21 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 20
+        fontSize: 23
     },
+
     inputM2: {
         width: 180,
-        marginLeft: 10,
+        marginLeft: 12,
         height: 50, 
         marginTop: 8,
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
+        fontSize: 23,
+    
     },
+
     input3: {
         width: 370,
         marginLeft: 22,
@@ -76,6 +85,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
+        fontSize: 25,
     },
     inputData:{
         display: 'flex',
@@ -96,6 +106,7 @@ const styles = StyleSheet.create({
         fontSize: 30,
         textAlign: 'center',
         marginTop: 50,
+        fontWeight: 'bold'
     },
     linha: {
         fontSize: 16,
@@ -117,7 +128,12 @@ const styles = StyleSheet.create({
     },
     textoBotao: {
         color: '#1A6069',
-        fontSize: 20,
+        fontSize: 25,
+        fontWeight: 'bold', 
+        textAlign: 'center',
+        alignItems: 'center',
+        marginTop: 5
+
     }
 });
 
