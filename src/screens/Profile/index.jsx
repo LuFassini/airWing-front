@@ -1,5 +1,6 @@
 import { Text, View } from "react-native";
 
+import { ScrollView } from "react-native-gesture-handler";
 import styles from "./styles";
 import Title from "../../components/Title";
 import TouchButton from "../../components/TouchButton";
@@ -10,13 +11,12 @@ export default function Profile({ route }) {
   const { data } = route.params;
 
   return (
+    <ScrollView>
     <View style={styles.container}>
                           <EasyNavegation />
-      <Title title="Profile" />
-
-      <TouchButton route="Home" title="Go to Home" />
-
-      <TouchButton route="Category" title="Go to Category" />
+                          <View style={styles.borda}>
+                        <Text style={styles.titulo}>Perfil</Text>
+                    </View>
 
       <View style={styles.user}>
         <Title title="User" />
@@ -29,5 +29,6 @@ export default function Profile({ route }) {
       </View>
       <NewFooter />
     </View>
+    </ScrollView>
   );
 }

@@ -26,7 +26,7 @@ export default function QuemSomos() {
           </View>
           <Image source={require('../../../assets/encante-se.png')} style={styles.image}/>
           <View style={styles.quadro}>
-            <Text style={styles.titulo1w}>Encante-se</Text>
+            <Text style={styles.titulo1}>Encante-se</Text>
             </View>
       </View>
       <View style={styles.quadro3}>
