@@ -26,19 +26,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     paddingLeft: 10,
     borderRadius: 5, // Borda arredondada
-    marginTop: 10,
-    fontSize: 25
   },
-
-  titles: {
-    fontSize: 30,
-    fontWeight: 'bold',
-    marginBottom: 10,
-    textAlign: 'center',
-    marginRight: 50,
-    color: '#1B0EB8',
-  },
-  
   textSubTitle: {
     marginBottom: 10, 
     fontSize: 15, 

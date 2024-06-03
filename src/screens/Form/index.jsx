@@ -103,7 +103,6 @@ export default function Form() {
           value={phone}
           onChangeText={setPhone}
         />
-        <View style={styles.radioButton}>
         <RadioButton
         value="M"
         status={ checked === 'M' ? 'checked' : 'unchecked' }
@@ -123,18 +122,16 @@ export default function Form() {
         }
         }
       />
-      <Text>Feminino</Text>
-      </View>
-
+      <Text>Femea</Text>
         <View style={styles.passwordarea}>
           <TextInput style={styles.inputsenha} placeholder="Senha" secureTextEntry={showPassword} onChangeText={setPassword} value={password} />
           <TouchableOpacity onPress={showHidePassword} style={styles.button}>
             <Icon name={showPassword ? "lock" : "lock-open"} />
           </TouchableOpacity>
         </View>
-        <TouchableOpacity onPress={handleUser} style={styles.button2} >
-          <Icon name={"lock"} />
-        </TouchableOpacity>
+        <TouchableOpacity onPress={handleUser} style={styles.button2} >Cadastre-se</TouchableOpacity>
+        
+       
         {
           popUp && <Text style={styles.popUp}>Usuário cadastrado com sucesso!</Text>
         }
