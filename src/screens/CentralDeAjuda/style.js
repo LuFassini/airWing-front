@@ -23,16 +23,19 @@ const styles = StyleSheet.create({
         color: '#209F7C',
         opacity: 1,
         marginBottom: 10,
-        marginTop: 11,
+        marginTop: 18,
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center"
     },
     texto1: {
-        fontSize: 16,
+        fontSize: 17,
         marginBottom: 10,
         marginTop: 15,
         marginLeft: 50,
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
     },
     linha1: {
         fontSize: 16,

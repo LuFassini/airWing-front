@@ -11,7 +11,7 @@ export default function pacotes() {
       <EasyNavegation />
 
       <View style={styles.quadro}>
-        <Text style={styles.titulo}>Conheça nossos pacotes de turismo.</Text>
+        <Text style={styles.Titulo}>Conheça nossos pacotes de turismo.</Text>
       </View>
 
       <View style={styles.quadro2}>
