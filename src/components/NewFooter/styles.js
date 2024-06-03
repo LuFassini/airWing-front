@@ -8,7 +8,8 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         bottom: 0,
-        
+
+
     },
     icons: {
         flexDirection: "row",

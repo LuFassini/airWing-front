@@ -10,8 +10,9 @@ import NewFooter from "../../components/NewFooter";
 
 export default function Home() {
   return (
-    <ScrollView>
+
       <View style={styles.container}>
+            <ScrollView>
         <EasyNavegation />
 
                 <View style={styles.Inputs}>
@@ -44,8 +45,9 @@ export default function Home() {
 
 
         <NewFooter />
+        </ScrollView>
       </View>
-    </ScrollView>
+ 
 
   );
 }

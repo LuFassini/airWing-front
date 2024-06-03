@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
+        fontSize: 25
     },
     input2: {
         width: 370,
@@ -56,6 +57,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
+        fontSize: 20,
     },
     inputM2: {
         width: 180,
@@ -65,6 +67,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
+        fontSize: 20,
     },
     input3: {
         width: 370,
@@ -74,6 +77,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
+        fontSize: 25,
     },
     inputData:{
         display: 'flex',
@@ -115,7 +119,7 @@ const styles = StyleSheet.create({
     },
     textoBotao: {
         color: '#1A6069',
-        fontSize: 20,
+        fontSize: 25,
     }
 });
 
