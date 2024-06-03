@@ -64,6 +64,7 @@ export default function Voos() {
                 <TouchableOpacity style={styles.botao}>
                     <Text style={styles.textoBotao}>Central de Ajuda!</Text>
                 </TouchableOpacity>
+                <NewFooter />
 
             </ScrollView>
         </View>

@@ -14,11 +14,9 @@ export default function Profile({ route }) {
     <ScrollView>
     <View style={styles.container}>
                           <EasyNavegation />
-      <Title title="Profile" />
-
-      <TouchButton route="Home" title="Go to Home" />
-
-      <TouchButton route="Category" title="Go to Category" />
+                          <View style={styles.borda}>
+                        <Text style={styles.titulo}>Perfil</Text>
+                    </View>
 
       <View style={styles.user}>
         <Title title="User" />
