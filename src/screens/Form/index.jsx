@@ -103,6 +103,7 @@ export default function Form() {
           value={phone}
           onChangeText={setPhone}
         />
+        <View style={styles.radioButton}>
         <RadioButton
         value="M"
         status={ checked === 'M' ? 'checked' : 'unchecked' }
@@ -112,7 +113,7 @@ export default function Form() {
         }
         }
       />
-      <Text>Macho</Text>
+      <Text>Masculino</Text>
       <RadioButton
         value="F"
         status={ checked === 'F' ? 'checked' : 'unchecked' }
@@ -122,7 +123,9 @@ export default function Form() {
         }
         }
       />
-      <Text>Femea</Text>
+      <Text>Feminino</Text>
+      </View>
+
         <View style={styles.passwordarea}>
           <TextInput style={styles.inputsenha} placeholder="Senha" secureTextEntry={showPassword} onChangeText={setPassword} value={password} />
           <TouchableOpacity onPress={showHidePassword} style={styles.button}>

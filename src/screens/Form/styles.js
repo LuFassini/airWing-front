@@ -82,6 +82,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginRight: 50,
     color: '#00B5F2'
+  },
+  radioButton:{
+ flexDirection: "row"
   }
 });
 
