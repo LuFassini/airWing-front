@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
         color: '#A000EB',
         fontSize: 20,
         textAlign: 'center',
+        
     },
     input: {
         width: 370,
