@@ -1,9 +1,6 @@
-import { View, Image, Text, TextInput, TouchableOpacity } from "react-native";
+import { View, Text, TextInput, TouchableOpacity } from "react-native";
 
 import styles from "./styles";
-import Title from "../../components/Title";
-import { user } from "../../data/Profile";
-import TouchButton from "../../components/TouchButton";
 import { ScrollView } from "react-native-gesture-handler";
 import EasyNavegation from "../../components/EasyNavegation";
 import NewFooter from "../../components/NewFooter";

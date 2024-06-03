@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
+        fontSize: 20
     },
     input2: {
         width: 370,
@@ -56,6 +57,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
+        fontSize: 20
     },
     inputM2: {
         width: 180,
