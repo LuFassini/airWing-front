@@ -1,5 +1,6 @@
 import { Text, View } from "react-native";
 
+import { ScrollView } from "react-native-gesture-handler";
 import styles from "./styles";
 import Title from "../../components/Title";
 import TouchButton from "../../components/TouchButton";
@@ -10,6 +11,7 @@ export default function Profile({ route }) {
   const { data } = route.params;
 
   return (
+    <ScrollView>
     <View style={styles.container}>
                           <EasyNavegation />
       <Title title="Profile" />
@@ -29,5 +31,6 @@ export default function Profile({ route }) {
       </View>
       <NewFooter />
     </View>
+    </ScrollView>
   );
 }

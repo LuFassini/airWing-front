@@ -19,6 +19,12 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         fontWeight: 'bold', 
     },
+    Titulo: {
+        fontSize: 20,
+        textAlign: 'center',
+        fontWeight: 'bold', 
+        color: '#209F7C',
+    },
     titulo: {
         color: '#000',
         fontSize: 20,

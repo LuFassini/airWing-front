@@ -4,7 +4,6 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: "center",
     alignItems: "center",
-    flex: 1,
   },
   button: {
     marginTop: 20,
