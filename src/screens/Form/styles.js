@@ -2,8 +2,9 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
-    justifyContent: "center",
-    alignItems: "center",
+    backgroundColor: '#fff',
+    width: '100%',
+    height: '100%',
     flex: 1,
   },
   button: {
@@ -71,6 +72,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginRight: 50,
     color: '#00B5F2'
+  },
+  radioButton:{
+ flexDirection: "row"
   }
 });
 

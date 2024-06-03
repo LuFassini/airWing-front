@@ -1,17 +1,140 @@
-import { StyleSheet } from "react-native";
+import { height } from "@fortawesome/free-brands-svg-icons/fa42Group";
+import { StyleSheet } from "react-native-web";
 
 const styles = StyleSheet.create({
-  container: {
-    justifyContent: "center",
-    alignItems: "center",
-    flex: 1,
-  },
-  button: {
-    marginTop: 20,
-    padding: 10,
-    backgroundColor: "#C9D4FF",
-    borderRadius: 5,
-  },
+    container: {
+        backgroundColor: '#fff',
+        width: '100%',
+        height: '100%',
+        flex: 1,
+    },
+
+    quadro: {
+        backgroundColor: 'rgba(203, 115, 228, 0.45)',
+        padding: 20,
+        margin: 20,
+        borderRadius: 5,
+    },
+    quadro2: {
+        backgroundColor: 'rgba(203, 115, 228, 0.45)',
+        padding: 20,
+        margin: 20,
+        borderRadius: 5,
+        marginTop : -10
+    },
+    titulo: {
+        color: '#A000EB',
+        fontSize: 20,
+        textAlign: 'center',
+    },
+    input: {
+        width: 370,
+        marginLeft: 22,
+        height: 50, 
+        marginTop: 10,
+        borderRadius: 2,
+        borderColor: '#00B5F2',
+        borderWidth: 2,
+        fontSize: 25
+    },
+
+    input2: {
+        width: 370,
+        marginLeft: 22,
+        height: 50, 
+        marginTop: 8,
+        borderRadius: 2,
+        borderColor: '#00B5F2',
+        borderWidth: 2,
+    },
+    InputsMenor: {
+        display: 'flex',
+        flexDirection: 'row',
+    },
+    Inputs:{
+        marginTop: 40
+    },
+    inputM: {
+        width: 180,
+        marginLeft: 22,
+        height: 50, 
+        marginTop: 8,
+        borderRadius: 2,
+        borderColor: '#00B5F2',
+        borderWidth: 2,
+        fontSize: 23
+    },
+
+    inputM2: {
+        width: 180,
+        marginLeft: 12,
+        height: 50, 
+        marginTop: 8,
+        borderRadius: 2,
+        borderColor: '#00B5F2',
+        borderWidth: 2,
+        fontSize: 23,
+    
+    },
+
+    input3: {
+        width: 370,
+        marginLeft: 22,
+        height: 50, 
+        marginTop: 10,
+        borderRadius: 2,
+        borderColor: '#00B5F2',
+        borderWidth: 2,
+        fontSize: 25,
+    },
+    inputData:{
+        display: 'flex',
+        flexDirection: 'row',
+    },
+    inputBuscar: {
+        width: 370,
+        marginLeft: 22,
+        height: 50, 
+        marginTop: 20,
+        borderRadius: 2,
+        borderColor: '#00B5F2',
+        backgroundColor: 'rgba(0, 181, 242, 0.45)',
+        borderWidth: 2,
+    },
+    subTitulo: {
+        color: '#130799',
+        fontSize: 30,
+        textAlign: 'center',
+        marginTop: 50,
+        fontWeight: 'bold'
+    },
+    linha: {
+        fontSize: 16,
+        color: '#209F7C',
+        marginBottom: 10,
+        marginTop: 10,
+        marginLeft: 50,
+    },
+    botao: {
+        backgroundColor: '#68DDBD',
+        width: 370,
+        height: 50,
+        borderRadius: 5,
+        marginLeft: 22,
+        marginTop: 20,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    textoBotao: {
+        color: '#1A6069',
+        fontSize: 25,
+        fontWeight: 'bold', 
+        textAlign: 'center',
+        alignItems: 'center',
+        marginTop: 5
+
+    }
 });
 
 export default styles;
