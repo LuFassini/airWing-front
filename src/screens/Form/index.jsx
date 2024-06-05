@@ -6,6 +6,7 @@ import { Icon } from "@rneui/base";
 import { RadioButton } from 'react-native-paper';
 import EasyNavegation from "../../components/EasyNavegation";
 import NewFooter from "../../components/NewFooter";
+
 export default function Form() {
   const [name, setName] = useState("");
   const [birthYear, setBirthYear] = useState("");
@@ -104,7 +105,7 @@ export default function Form() {
           onChangeText={setPhone}
         />
         <View style={styles.radioButton}>
-        <RadioButton 
+        <RadioButton
         value="M"
         status={ checked === 'M' ? 'checked' : 'unchecked' }
         onPress={() => {
@@ -113,6 +114,7 @@ export default function Form() {
         }
         }
       />
+      </View>
 
       <View style={styles.butt}>
       <Text style={styles.sexM}>Masculino</Text>
@@ -125,11 +127,7 @@ export default function Form() {
         }
         }
       />
-
-      <Text style={styles.sexF}>Feminino</Text>
-      </View>
-     
-  
+      <Text>Feminino</Text>
       </View>
 
         <View style={styles.passwordarea}>
@@ -139,7 +137,7 @@ export default function Form() {
           </TouchableOpacity>
         </View>
         <TouchableOpacity onPress={handleUser} style={styles.button2} >
-         <Text style={styles.entt}> Entrar </Text>
+          <Icon name={"lock"} />
         </TouchableOpacity>
         {
           popUp && <Text style={styles.popUp}>Usuário cadastrado com sucesso!</Text>
@@ -148,6 +146,5 @@ export default function Form() {
       <NewFooter />
     </ScrollView>
     </View>
-  );
-}
+)};
 

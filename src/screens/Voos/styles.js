@@ -1,4 +1,3 @@
-import { height } from "@fortawesome/free-brands-svg-icons/fa42Group";
 import { StyleSheet } from "react-native-web";
 
 const styles = StyleSheet.create({
@@ -106,6 +105,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         marginLeft: 22,
         marginTop: 20,
+        marginBottom: 20,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -113,6 +113,9 @@ const styles = StyleSheet.create({
     textoBotao: {
         color: '#1A6069',
         fontSize: 20,
+        textAlign: 'center',
+        alignItems: 'center',
+        marginTop: 5
     }
 });
 

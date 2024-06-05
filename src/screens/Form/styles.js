@@ -30,50 +30,14 @@ const styles = StyleSheet.create({
     fontSize: 25
   },
 
-  sexM:{
-    fontSize: 25,
-    textAlign: 'center',
-    marginLeft: 5,
-    justifyContent: 'center',
-    alignItems: 'center', 
-    marginBottom: 10,
-
-  },
-
-  sexF: {
-    fontSize: 25,
-    textAlign: 'center',
-    marginLeft: 5,
-    justifyContent: 'center',
-    alignItems: 'center', 
-    marginBottom: 10,
-  },
-
-  butt:{
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 10,
-    marginLeft: 15
-
-  },
-  
-  entt: {
-    fontSize: 25,
-    textAlign: 'center',
-    fontWeight: 'bold',
-  },
-
   titles: {
     fontSize: 30,
     fontWeight: 'bold',
     marginBottom: 10,
     textAlign: 'center',
     marginRight: 50,
-    alignItems: 'center',
-
+    color: '#1B0EB8',
   },
-  
   textSubTitle: {
     marginBottom: 10, 
     fontSize: 15, 

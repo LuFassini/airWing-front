@@ -4,7 +4,6 @@ import { View, Text, TouchableOpacity } from "react-native";
 import EasyNavegation from "../../components/EasyNavegation";
 import NewFooter from "../../components/NewFooter";
 
-
 export default function Voos() {
 
     return (
@@ -52,10 +51,9 @@ export default function Voos() {
                 </View>
 
                 <View style={styles.buscar}>
-                    <TextInput style={styles.inputBuscar} 
-                        placeholder="Buscar Voos"
-                        onChangeText={text => onChangeText(text)}
-                        />
+                <TouchableOpacity style={styles.inputBuscar}>
+                    <Text style={styles.textoBotao}>Buscar Hotéis!</Text>
+                </TouchableOpacity>
                 </View>
 
                 <Text style={styles.subTitulo}>Voos</Text>

@@ -1,4 +1,3 @@
-import { height } from "@fortawesome/free-brands-svg-icons/fa42Group";
 import { StyleSheet } from "react-native-web";
 
 const styles = StyleSheet.create({
@@ -35,7 +34,6 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 25
     },
 
     input2: {
@@ -62,7 +60,6 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 23
     },
 
     inputM2: {
@@ -73,8 +70,6 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 23,
-    
     },
 
     input3: {
@@ -85,7 +80,6 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 25,
     },
     inputData:{
         display: 'flex',
@@ -122,18 +116,17 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         marginLeft: 22,
         marginTop: 20,
+        marginBottom: 20,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
     },
     textoBotao: {
         color: '#1A6069',
-        fontSize: 25,
-        fontWeight: 'bold', 
         textAlign: 'center',
         alignItems: 'center',
-        marginTop: 5
-
+        marginTop: 5,
+        fontSize: 20,
     }
 });
 
