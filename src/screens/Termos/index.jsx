@@ -1,6 +1,5 @@
 import React from 'react'
-import { View, Text, Image } from 'react-native'
-import { ScrollView } from 'react-native-gesture-handler'
+import { View, Text, Image, ScrollView } from 'react-native'
 import styles from './style'
 import EasyNavegation from '../../components/EasyNavegation'
 import NewFooter from '../../components/NewFooter'
