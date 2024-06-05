@@ -2,8 +2,6 @@ import { Text, View, TouchableOpacity } from "react-native";
 import { useEffect, useState } from "react";
 import { ScrollView } from "react-native-gesture-handler";
 import styles from "./styles";
-import Title from "../../components/Title";
-import axios from "axios";
 
 export default function Profile() {
   const [users, setUser] = useState([]);
