@@ -62,19 +62,19 @@ export default function Voos() {
                 <View style={styles.voos}>
 
                     <View style={styles.franca}>
-                        <Image source={require('../../../assets/images/franca.png')} style={{ width: 20, height: 20, marginTop: 30, marginBottom: 35, width: 350, height: 210, borderRadius: 5, marginLeft: 7, }} />
+                        <Image source={require('../../../assets/images/franca.png')} style={{ width: 20, height: 20, marginTop: 30, marginBottom: 35, width: 350, height: 210, borderRadius: 5, marginLeft: -8 }} />
                         <Text style={styles.nomeVoo}>França</Text>
                         <Text style={styles.preco}>A partir de: R$ 9.089,00</Text>
                     </View>
 
                     <View style={styles.espanha}>
-                        <Image source={require('../../../assets/images/espanha.png')} style={{ width: 20, height: 20, marginTop: 30, marginBottom: 35, width: 350, height: 210, borderRadius: 5, marginLeft: 7, }} />
+                        <Image source={require('../../../assets/images/espanha.png')} style={{ width: 20, height: 20, marginTop: 30, marginBottom: 35, width: 350, height: 210, borderRadius: 5, marginLeft: -8 }} />
                         <Text style={styles.nomeVoo}>Espanha</Text>
                         <Text style={styles.preco}>A partir de: R$ 10.177,00</Text>
                     </View>
 
                     <View style={styles.eua}>
-                        <Image source={require('../../../assets/images/eua.png')} style={{ width: 20, height: 20, marginTop: 30, marginBottom: 35, width: 350, height: 210, borderRadius: 5, marginLeft: 7, }} />
+                        <Image source={require('../../../assets/images/eua.png')} style={{ width: 20, height: 20, marginTop: 30, marginBottom: 35, width: 350, height: 210, borderRadius: 5, marginLeft: -8 }} />
                         <Text style={styles.nomeVoo}>Estados Unidos</Text>
                         <Text style={styles.preco}>A partir de: R$ 7.417,00</Text>
                     </View>
