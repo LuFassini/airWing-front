@@ -131,9 +131,16 @@ const styles = StyleSheet.create({
   },
 
   radioButton:{
-  flexDirection: "row"
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "center",
+  
   },
-
+radio2:{
+  flexDirection: "column",
+  alignItems: "center",
+  marginRight: 10,
+},
   button:{
     padding: 10,
     backgroundColor: "#C9D4FF",
@@ -141,15 +148,9 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginTop: -8,
   },
-
-  butt: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-    marginTop: 10,
-    fontSize: 25
-  },
-  
+  sexM:{
+    fontSize: 26,
+  }
 
 });
 
