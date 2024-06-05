@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginRight: 50,
     color: '#1B0EB8',
+    marginLeft: 10
   },
 
   textSubTitle: {
@@ -97,11 +98,17 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     borderRadius: 5, // Borda arredondada
     width: 730,
-    fontSize: 25
+    fontSize: 25,
+    marginTop: 15,
+    
   },
 
   popUp: {
   color: '#209F7C',
+  },
+
+  button: {
+    marginTop: -5
   },
 
   button2:{
@@ -112,6 +119,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     justifyContent: 'center',
     alignItems: 'center',
+    fontWeight: 'bold',
   },
 
   title: {
@@ -151,6 +159,8 @@ radio2:{
   },
   intext: {
     fontSize: 25,
+    fontWeight: 'bold',
+    color: '#1B0EB8',
   },
 
 });
