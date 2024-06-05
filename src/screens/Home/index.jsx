@@ -1,5 +1,4 @@
 import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
-
 import styles from "./styles";
 import { ScrollView } from "react-native-gesture-handler";
 import EasyNavegation from "../../components/EasyNavegation";
