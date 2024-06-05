@@ -1,3 +1,4 @@
+import axios from "axios";
 import { Text, TextInput, View, TouchableOpacity, ScrollView } from "react-native";
 import styles from "./styles";
 import { useEffect, useState } from "react";
@@ -8,44 +9,73 @@ import EasyNavegation from "../../components/EasyNavegation";
 import NewFooter from "../../components/NewFooter";
 
 export default function Form() {
-  const [name, setName] = useState("");
-  const [birthYear, setBirthYear] = useState("");
+  const [username, setName] = useState("");
+  const [datanascimento, setBirthYear] = useState("");
   const [email, setEmail] = useState("");
   const [cpf, setCpf] = useState("");
-  const [phone, setPhone] = useState("");
-  const [sex, setSex] = useState('');
-  const [password, setPassword] = useState("");
+  const [telephone, setPhone] = useState("");
+  const [sexo, setSex] = useState('');
+  const [senha, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(true);
   const [checked, setChecked] = useState('M');
   const [popUp, setPopUp] = useState(false);
-  function handleUser() {
-    if (!name || !birthYear || !email || !cpf || !phone || !sex || !password) {
-      alert("Preencha todos os campos!");
-      return;
-    }
+  const [popUpMessage, setPopUpMessage] = useState('');
+  const [dados, setDados] = useState([]);
 
-    if ( isNaN(birthYear)) {
-      alert("Idade e Ano de Nascimento devem ser números!");
-      return;
-    }
 
-    if (!email.includes("@") || !email.includes(".")) {
-      alert("Email inválido!");
-      return;
+  const handleUserCreate = async (e) => {
+    e.preventDefault();
+    try {
+      if (!username || !datanascimento || !email || !cpf || !telephone || !sexo || !senha) {
+        setPopUpMessage("Preencha todos os campos!");
+        setPopUp(true);
+         return;
+       }
+   
+       if ( isNaN(datanascimento)) {
+         setPopUpMessage("Idade e Ano de Nascimento devem ser números!");
+        setPopUp(true);
+   
+         return;
+       }
+   
+       if (!email.includes("@") || !email.includes(".")) {
+         setPopUpMessage("Email inválido!");
+        setPopUp(true);
+   
+         return;
+       }
+      const response = await axios.post('/users',{ username , datanascimento , email, cpf , telephone , sexo, senha}  )
+      if (Array.isArray(response.data.users)) {
+        setDados(... dados, response.data.users);
+        console.log(dados);
+      }
+      setName('');
+      setBirthYear('');
+      setEmail('');
+      setCpf('');
+      setPhone('');
+      setSex('');
+      setPassword('');
+      setPopUpMessage("Usuário cadastrado com sucesso!");
+      setPopUp(true);
+      clearFields();
+    } catch (error) {
+      console.error(error);
     }
-
-    console.log({
-      name,
-      birthYear,
-      email,
-      cpf,
-      phone,
-      sex,
-      password,
-    });
-    setPopUp(true);
-    clearFields();
   }
+useEffect(() => {
+  async function fetchData() {
+    try {
+      const response = await axios.get('/users');
+      setDados(response.data.users);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  fetchData();
+}, [dados]);
+
 
   function clearFields() {
     setName("");
@@ -82,8 +112,8 @@ export default function Form() {
       <Text style={styles.titles}> Cadastro </Text>
 
       <View style={styles.user}>
-        <TextInput style={styles.input} placeholder="Nome Completo" onChangeText={setName} value={name} />
-        <TextInput style={styles.input} placeholder="Ano de Nascimento" onChangeText={setBirthYear} value={birthYear} />
+        <TextInput style={styles.input} placeholder="Nome Completo" onChangeText={setName} value={username} />
+        <TextInput style={styles.input} placeholder="Ano de Nascimento" onChangeText={setBirthYear} value={datanascimento} />
         <TextInput style={styles.input} placeholder="Email" onChangeText={setEmail} value={email} />
         <TextInputMask
           style={styles.input}
@@ -101,7 +131,7 @@ export default function Form() {
             withDDD: true,
             dddMask: '(99) ',
           }}
-          value={phone}
+          value={telephone}
           onChangeText={setPhone}
         />
         <View style={styles.radioButton}>
@@ -131,16 +161,16 @@ export default function Form() {
       </View>
 
         <View style={styles.passwordarea}>
-          <TextInput style={styles.inputsenha} placeholder="Senha" secureTextEntry={showPassword} onChangeText={setPassword} value={password} />
+          <TextInput style={styles.inputsenha} placeholder="Senha" secureTextEntry={showPassword} onChangeText={setPassword} value={senha} />
           <TouchableOpacity onPress={showHidePassword} style={styles.button}>
             <Icon name={showPassword ? "lock" : "lock-open"} />
           </TouchableOpacity>
         </View>
-        <TouchableOpacity onPress={handleUser} style={styles.button2} >
+        <TouchableOpacity onPress={handleUserCreate} style={styles.button2} >
           <Icon name={"lock"} />
         </TouchableOpacity>
         {
-          popUp && <Text style={styles.popUp}>Usuário cadastrado com sucesso!</Text>
+          popUp && <Text style={styles.popUp}>{popUpMessage}</Text>
         }
       </View>
       <NewFooter />
