@@ -7,15 +7,18 @@ const styles = StyleSheet.create({
     height: '100%',
     flex: 1,
   },
+
   button: {
     marginTop: 20,
     padding: 10,
     backgroundColor: "#d3d3d3",
     borderRadius: 5,
   },
+
   user: {
   flex:1,
   },
+
 
   text: {
     fontSize: 16,
@@ -54,6 +57,7 @@ const styles = StyleSheet.create({
     marginRight: 50,
     color: '#1B0EB8',
   },
+
   textSubTitle: {
     marginBottom: 10, 
     fontSize: 15, 
@@ -93,6 +97,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(19, 7, 153, 1, 0,6)',
     borderRadius: 5,
   },
+  
   inputsenha: {
     height: 40,
     borderColor: '#00B5F2',
