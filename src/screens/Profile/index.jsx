@@ -2,8 +2,12 @@ import { Text, View, TouchableOpacity } from "react-native";
 import { useEffect, useState } from "react";
 import { ScrollView } from "react-native-gesture-handler";
 import styles from "./styles";
+import NewFooter from "../../components/NewFooter";
+import EasyNavegation from "../../components/EasyNavegation";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Profile() {
+  const navigation = useNavigation();
   const [users, setUser] = useState([]);
   const apiUrl = 'http://10.88.194.120:4000/users';
   const fetchUser = async () => {
@@ -39,10 +43,8 @@ export default function Profile() {
   }
 
   const updateUser = async (id) => {
-    const url = '/users/${id}';
-    try {
-      await axios.put(url);
-      setUser(users.filter((user) => user.id !== id));
+    try{
+      navigation.navigate('Form', {id});
     } catch (error) {
       console.error(error);
     }
@@ -51,9 +53,10 @@ export default function Profile() {
   return (
     <ScrollView>
       <View style={styles.container}>
+        <EasyNavegation />
         {
           users.map((user) => (
-            <View key={user.id}>
+            <View key={user.id} style={styles.user}>
               <Text>Nome : {user.username}</Text>
               <Text>Data de nascimento : {user.datanascimento}</Text>
               <Text>Idade : {user.idade}</Text>
@@ -62,16 +65,17 @@ export default function Profile() {
               <Text>Telefone : {user.telephone}</Text>
               <Text>Sexo : {user.sexo}</Text>
               <Text>Senha : {user.senha}</Text>
-              <TouchableOpacity onPress={() => deleteUser(user.id)}>
+              <TouchableOpacity onPress={() => deleteUser(user.id)} style={styles.button}>
                 <Text>Excluir</Text>
               </TouchableOpacity>
-              <TouchableOpacity onPress={() => updateUser(user.id)}>
+              <TouchableOpacity onPress={() => updateUser(user.id)} style={styles.button}>
                 <Text>Atualizar</Text>
               </TouchableOpacity>
             </View>
           ))
         }
       </View>
+      <NewFooter />
     </ScrollView>
   );
 }

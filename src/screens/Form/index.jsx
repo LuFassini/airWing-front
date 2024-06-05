@@ -8,7 +8,7 @@ import { RadioButton } from 'react-native-paper';
 import EasyNavegation from "../../components/EasyNavegation";
 import NewFooter from "../../components/NewFooter";
 
-export default function Form() {
+export default function Form( {id} ) {
   const [username, setName] = useState("");
   const [datanascimento, setBirthYear] = useState("");
   const [email, setEmail] = useState("");
@@ -45,11 +45,18 @@ export default function Form() {
    
          return;
        }
-      const response = await axios.post('/users',{ username , datanascimento , email, cpf , telephone , sexo, senha}  )
-      if (Array.isArray(response.data.users)) {
-        setDados(... dados, response.data.users);
-        console.log(dados);
-      }
+       const response = await axios.post('/users', { username, datanascimento, email, cpf, telephone, sexo, senha });
+       if (response.data && Array.isArray(response.data.users)) {
+         setDados(prevDados => [...prevDados, ...response.data.users]);
+         console.log(response.data.users);
+         console.log(response.data);
+         console.log(dados);
+       } else if (response.data && response.data.user) {
+         setDados(prevDados => [...prevDados, response.data.user]);
+         console.log(response.data.users);
+         console.log(response.data);
+         console.log(dados);
+       }
       setName('');
       setBirthYear('');
       setEmail('');
