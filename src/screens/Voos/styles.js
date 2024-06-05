@@ -110,6 +110,7 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         fontSize: 25
     },
+
     inputBuscar: {
         width: 370,
         marginLeft: 22,
@@ -120,6 +121,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(0, 181, 242, 0.45)',
         borderWidth: 2,
     },
+
     subTitulo: {
         color: '#130799',
         fontSize: 30,
@@ -128,6 +130,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#1B0EB8',
     },
+
     linha: {
         fontSize: 16,
         color: '#209F7C',
@@ -135,6 +138,7 @@ const styles = StyleSheet.create({
         marginTop: 10,
         marginLeft: 50,
     },
+    
     botao: {
         backgroundColor: '#68DDBD',
         width: 370,

@@ -28,18 +28,19 @@ const styles = StyleSheet.create({
     },
     nomeHotel: {
         color: '#A000EB',
-        fontSize: 20,
+        fontSize: 30,
         textAlign: 'center',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        marginBottom: 15
     },
     localizacao: {
         color: '#130799',
-        fontSize: 19,
+        fontSize: 23,
         textAlign: 'center',
     },
     preco: {
         color: '#130799',
-        fontSize: 18,
+        fontSize: 23,
         textAlign: 'center',
     },
     quadro: {
@@ -151,7 +152,7 @@ const styles = StyleSheet.create({
     botao: {
         backgroundColor: '#68DDBD',
         width: 370,
-        height: 50,
+        height: 60,
         borderRadius: 5,
         marginLeft: 22,
         marginTop: 20,
@@ -166,7 +167,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         alignItems: 'center',
-        marginTop: 10
+        marginTop: 10,
+        marginBottom: 5
 
     }
 });
