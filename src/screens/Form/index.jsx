@@ -127,7 +127,7 @@ export default function Form() {
         }
         }
       />
-      <Text>Feminino</Text>
+      <Text style={styles.sexF}>Feminino</Text>
       </View>
 
         <View style={styles.passwordarea}>
