@@ -9,7 +9,7 @@ import { useNavigation } from "@react-navigation/native";
 export default function Profile() {
   const navigation = useNavigation();
   const [users, setUser] = useState([]);
-  const apiUrl = 'http://10.88.194.120:4000/users';
+  const apiUrl = 'http://10.88.200.141:4000/users';
   const fetchUser = async () => {
     try {
       const response = await fetch(apiUrl, {
@@ -33,22 +33,21 @@ export default function Profile() {
   console.log("Usuários", users);
 
   const deleteUser = async (id) => {
-    const url = '/users/${id}';
+    const url = `http://10.88.200.141:4000/users/${id}`;
     try {
-      await axios.delete(url);
-      setUser(users.filter((user) => user.id !== id));
+      const response = await fetch(url, { method: 'DELETE' });
+      if (response.ok) {
+        setUser(users.filter((user) => user.id !== id));
+      }
     } catch (error) {
       console.error(error);
     }
-  }
+    }
 
-  const updateUser = async (id) => {
-    try{
-      navigation.navigate('Form', {id});
-    } catch (error) {
-      console.error(error);
-    }
-  }
+    const editUser = (user) => {
+      console.log("Usuário", user);
+      navigation.navigate("Form", { user: user, edit: true });
+    };
 
   return (
     <ScrollView>
@@ -68,7 +67,7 @@ export default function Profile() {
               <TouchableOpacity onPress={() => deleteUser(user.id)} style={styles.button}>
                 <Text>Excluir</Text>
               </TouchableOpacity>
-              <TouchableOpacity onPress={() => updateUser(user.id)} style={styles.button}>
+              <TouchableOpacity onPress={() => editUser(user)} style={styles.button}>
                 <Text>Atualizar</Text>
               </TouchableOpacity>
             </View>

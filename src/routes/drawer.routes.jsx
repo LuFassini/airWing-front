@@ -45,7 +45,25 @@ const DrawerRoutes = () => {
 
         }}
       />
-      
+      <Drawer.Screen
+        name="Perfil"
+        component={Profile}
+        options={{
+          headerTitle: () => (
+            <Logo left={260}/>
+          ),
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="user"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Perfil",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
       <Drawer.Screen
         name="Voos"
         component={Voos}
@@ -68,6 +86,7 @@ const DrawerRoutes = () => {
       <Drawer.Screen
         name="Form"
         component={Form}
+        initialParams={false}
         options={{
           headerTitle: () => (
             <Logo left={260}/>
