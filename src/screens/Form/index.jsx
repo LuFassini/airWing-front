@@ -158,6 +158,7 @@ useEffect(() => {
         }
         }
       />
+
       <Text style={styles.sexM}>Feminino</Text>
       </View>
       </View>

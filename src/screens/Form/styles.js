@@ -16,9 +16,25 @@ const styles = StyleSheet.create({
   user: {
   flex:1,
   },
+
   text: {
     fontSize: 16,
   },
+
+  sexF:{
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    fontSize: 30
+  },
+  
+  sexM: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    fontSize: 30
+  },
+
   input: {
     height: 40,
     borderColor: '#00B5F2',
@@ -46,18 +62,30 @@ const styles = StyleSheet.create({
     color: '#A1B65E', 
     marginTop: -10, 
   },
+
   passwordarea: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
     
   },
+
+  butt:{
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    marginTop: 10,
+    fontSize: 25
+  },
+  
+
   button: {
     marginTop: 20,
     padding: 10,
     backgroundColor: "#C9D4FF",
     borderRadius: 5,
   },
+
   button2: {
     marginTop: 20,
     marginBottom: 20,
