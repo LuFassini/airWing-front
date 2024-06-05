@@ -8,7 +8,7 @@ import { RadioButton } from 'react-native-paper';
 import EasyNavegation from "../../components/EasyNavegation";
 import NewFooter from "../../components/NewFooter";
 
-export default function Form( {id} ) {
+export default function Form(  ) {
   const [username, setName] = useState("");
   const [datanascimento, setBirthYear] = useState("");
   const [email, setEmail] = useState("");
@@ -25,38 +25,13 @@ export default function Form( {id} ) {
 
   const handleUserCreate = async (e) => {
     e.preventDefault();
+    console.log(dados);
     try {
-      if (!username || !datanascimento || !email || !cpf || !telephone || !sexo || !senha) {
-        setPopUpMessage("Preencha todos os campos!");
-        setPopUp(true);
-         return;
-       }
-   
-       if ( isNaN(datanascimento)) {
-         setPopUpMessage("Idade e Ano de Nascimento devem ser números!");
-        setPopUp(true);
-   
-         return;
-       }
-   
-       if (!email.includes("@") || !email.includes(".")) {
-         setPopUpMessage("Email inválido!");
-        setPopUp(true);
-   
-         return;
-       }
-       const response = await axios.post('/users', { username, datanascimento, email, cpf, telephone, sexo, senha });
-       if (response.data && Array.isArray(response.data.users)) {
-         setDados(prevDados => [...prevDados, ...response.data.users]);
-         console.log(response.data.users);
-         console.log(response.data);
-         console.log(dados);
-       } else if (response.data && response.data.user) {
-         setDados(prevDados => [...prevDados, response.data.user]);
-         console.log(response.data.users);
-         console.log(response.data);
-         console.log(dados);
-       }
+      const response = await axios.post('/users', { username, datanascimento, email, cpf, telephone, sexo, senha });
+      if (response.data.users) {
+        setDados([...dados, response.data])
+        console.log(response);
+      }
       setName('');
       setBirthYear('');
       setEmail('');
@@ -66,7 +41,7 @@ export default function Form( {id} ) {
       setPassword('');
       setPopUpMessage("Usuário cadastrado com sucesso!");
       setPopUp(true);
-      clearFields();
+
     } catch (error) {
       console.error(error);
     }
@@ -76,12 +51,13 @@ useEffect(() => {
     try {
       const response = await axios.get('/users');
       setDados(response.data.users);
+            clearFields();
     } catch (error) {
       console.error(error);
     }
   }
   fetchData();
-}, [dados]);
+}, []);
 
 
   function clearFields() {
@@ -116,9 +92,10 @@ useEffect(() => {
                      
       
       <EasyNavegation />
-
-      <Text style={styles.titles}> Cadastro </Text>
       
+      <View style={styles.cad}>
+      <Text style={styles.titles}> Cadastro </Text>
+      </View>
 
       <View style={styles.user}>
         <TextInput style={styles.input} placeholder="Nome Completo" onChangeText={setName} value={username} />
