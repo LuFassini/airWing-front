@@ -119,6 +119,8 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: "#C9D4FF",
     borderRadius: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
   title: {
@@ -153,7 +155,12 @@ radio2:{
   }, 
 
   cad: {
-    backgroundColor: 'rgba(0, 181, 242, 1, 0.6)'
+    backgroundColor: 'rgba(0, 181, 242, 1, 0.6)',
+    justifyContent: 'center',
+    alignContent: 'center',
+  },
+  intext: {
+    fontSize: 25,
   },
 
 });
