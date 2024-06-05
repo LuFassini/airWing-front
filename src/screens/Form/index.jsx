@@ -104,7 +104,7 @@ export default function Form() {
           onChangeText={setPhone}
         />
         <View style={styles.radioButton}>
-        <RadioButton
+        <RadioButton 
         value="M"
         status={ checked === 'M' ? 'checked' : 'unchecked' }
         onPress={() => {
@@ -113,8 +113,10 @@ export default function Form() {
         }
         }
       />
-      <Text>Masculino</Text>
-      <RadioButton
+
+      <View style={styles.butt}>
+      <Text style={styles.sexM}>Masculino</Text>
+      <RadioButton 
         value="F"
         status={ checked === 'F' ? 'checked' : 'unchecked' }
         onPress={() => {
@@ -123,7 +125,11 @@ export default function Form() {
         }
         }
       />
-      <Text>Feminino</Text>
+
+      <Text style={styles.sexF}>Feminino</Text>
+      </View>
+     
+  
       </View>
 
         <View style={styles.passwordarea}>
@@ -133,7 +139,7 @@ export default function Form() {
           </TouchableOpacity>
         </View>
         <TouchableOpacity onPress={handleUser} style={styles.button2} >
-          <Icon name={"lock"} />
+         <Text style={styles.entt}> Entrar </Text>
         </TouchableOpacity>
         {
           popUp && <Text style={styles.popUp}>Usuário cadastrado com sucesso!</Text>

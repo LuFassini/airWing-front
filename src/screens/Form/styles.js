@@ -30,13 +30,48 @@ const styles = StyleSheet.create({
     fontSize: 25
   },
 
+  sexM:{
+    fontSize: 25,
+    textAlign: 'center',
+    marginLeft: 5,
+    justifyContent: 'center',
+    alignItems: 'center', 
+    marginBottom: 10,
+
+  },
+
+  sexF: {
+    fontSize: 25,
+    textAlign: 'center',
+    marginLeft: 5,
+    justifyContent: 'center',
+    alignItems: 'center', 
+    marginBottom: 10,
+  },
+
+  butt:{
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 10,
+    marginLeft: 15
+
+  },
+  
+  entt: {
+    fontSize: 25,
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
+
   titles: {
     fontSize: 30,
     fontWeight: 'bold',
     marginBottom: 10,
     textAlign: 'center',
     marginRight: 50,
-    color: '#1B0EB8',
+    alignItems: 'center',
+
   },
   
   textSubTitle: {
@@ -51,6 +86,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
+    
   },
   button: {
     marginTop: 20,
@@ -62,7 +98,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 20,
     padding: 10,
-    backgroundColor: "#C9D4FF",
+    backgroundColor: 'rgba(19, 7, 153, 1, 0,6)',
     borderRadius: 5,
   },
   inputsenha: {
@@ -72,11 +108,22 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     paddingLeft: 10,
     borderRadius: 5, // Borda arredondada
-    width: '75%',
+    width: 730,
+    fontSize: 25
   },
+
   popUp: {
- color: '#209F7C',
+  color: '#209F7C',
   },
+
+  button2:{
+    marginTop: 20,
+    marginBottom: 20,
+    padding: 10,
+    backgroundColor: "#C9D4FF",
+    borderRadius: 5,
+  },
+
   title: {
     fontSize: 30,
     fontWeight: 'bold',
@@ -85,9 +132,19 @@ const styles = StyleSheet.create({
     marginRight: 50,
     color: '#00B5F2'
   },
+
   radioButton:{
- flexDirection: "row"
+  flexDirection: "row"
+  },
+
+  button:{
+    padding: 10,
+    backgroundColor: "#C9D4FF",
+    borderRadius: 5,
+    marginLeft: 10,
+    marginTop: -8,
   }
+
 });
 
 export default styles;
