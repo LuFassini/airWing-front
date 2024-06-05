@@ -1,7 +1,5 @@
-import { Button, Text, TextInput, View, TouchableOpacity, ScrollView } from "react-native";
+import { Text, TextInput, View, TouchableOpacity, ScrollView } from "react-native";
 import styles from "./styles";
-import Title from "../../components/Title";
-import TouchButton from "../../components/TouchButton";
 import { useEffect, useState } from "react";
 import { TextInputMask } from "react-native-masked-text";
 import { Icon } from "@rneui/base";
@@ -79,8 +77,8 @@ export default function Form() {
        <ScrollView >
                      
 
-                    <EasyNavegation />
-      <Text style={styles.title}> Cadastro </Text>
+      <EasyNavegation />
+      <Text style={styles.titles}> Cadastro </Text>
 
       <View style={styles.user}>
         <TextInput style={styles.input} placeholder="Nome Completo" onChangeText={setName} value={name} />
