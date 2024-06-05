@@ -173,7 +173,7 @@ useEffect(() => {
           </TouchableOpacity>
         </View>
         <TouchableOpacity onPress={handleUserCreate} style={styles.button2} >
-          <Icon name={"lock"} />
+          <Text style={styles.intext}>Cadastrar</Text>
         </TouchableOpacity>
         {
           popUp && <Text style={styles.popUp}>{popUpMessage}</Text>

@@ -38,6 +38,16 @@ export default function Profile() {
     }
   }
 
+  const updateUser = async (id) => {
+    const url = '/users/${id}';
+    try {
+      await axios.put(url);
+      setUser(users.filter((user) => user.id !== id));
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -54,6 +64,9 @@ export default function Profile() {
               <Text>Senha : {user.senha}</Text>
               <TouchableOpacity onPress={() => deleteUser(user.id)}>
                 <Text>Excluir</Text>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => updateUser(user.id)}>
+                <Text>Atualizar</Text>
               </TouchableOpacity>
             </View>
           ))
