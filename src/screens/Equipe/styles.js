@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         flex: 1,
+        backgroundColor: '#f8f8ff',
     },
     quadro1: {
        padding: 20,
@@ -24,14 +25,14 @@ const styles = StyleSheet.create({
         backgroundColor: 'rgba(0, 181, 242, 0.3)'
      },
     titulo1: {
-        color: '#000',
+        color: '#3e77b6',
         fontSize: 20,
         textAlign: 'center',
         fontWeight: 'bold', 
     },
 
     titulo: {
-        color: '#000',
+        color: '#3e77b6',
         fontSize: 20,
         textAlign: 'center',
         fontWeight: 'bold', 

@@ -14,6 +14,7 @@ import Pacotes from "../screens/Pacotes"
 import Equipe from "../screens/Equipe";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Feather } from "@expo/vector-icons";
+import Detalhes from "../screens/Detalhes";
 
 
 
@@ -203,6 +204,26 @@ const DrawerRoutes = () => {
             />
           ),
           drawerLabel: "Equipe",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
+
+        <Drawer.Screen
+        name="Detalhes"
+        component={Detalhes}
+        options={{
+          headerTitle: () => (
+            <Logo left={260}/>
+          ),
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="file-text"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Meus Pedidos",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
         }}

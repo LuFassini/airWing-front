@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: '100%',
         flex: 1,
+        backgroundColor: '#f8f8ff',
     },
     quadro: {
         backgroundColor: 'rgba(104,221,189, 0.6)',
