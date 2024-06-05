@@ -1,8 +1,9 @@
-import { Text, View } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
 import { useEffect, useState } from "react";
 import { ScrollView } from "react-native-gesture-handler";
 import styles from "./styles";
 import Title from "../../components/Title";
+import axios from "axios";
 
 export default function Profile() {
   const [users, setUser] = useState([]);
@@ -17,7 +18,7 @@ export default function Profile() {
       });
       const data = await response.json();
       setUser(data.users);
-      console.log('teste', data); 
+      console.log('teste', data);
     } catch (error) {
       console.error(error);
     }
@@ -29,6 +30,15 @@ export default function Profile() {
 
   console.log("Usuários", users);
 
+  const deleteUser = async (id) => {
+    const url = '/users/${id}';
+    try {
+      await axios.delete(url);
+      setUser(users.filter((user) => user.id !== id));
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
   return (
     <ScrollView>
@@ -44,6 +54,9 @@ export default function Profile() {
               <Text>Telefone : {user.telephone}</Text>
               <Text>Sexo : {user.sexo}</Text>
               <Text>Senha : {user.senha}</Text>
+              <TouchableOpacity onPress={() => deleteUser(user.id)}>
+                <Text>Excluir</Text>
+              </TouchableOpacity>
             </View>
           ))
         }
