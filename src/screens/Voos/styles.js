@@ -27,14 +27,15 @@ const styles = StyleSheet.create({
     },
     nomeVoo: {
         color: '#A000EB',
-        fontSize: 20,
+        fontSize: 30,
         textAlign: 'center',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        marginBottom: 15
 
     },
     preco: {
         color: '#130799',
-        fontSize: 18,
+        fontSize: 23,
         textAlign: 'center',
     },
     quadro: {
@@ -157,7 +158,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         alignItems: 'center',
-        marginTop: 10
+        marginTop: 10,
+        marginBottom: 5
     }
 });
 
