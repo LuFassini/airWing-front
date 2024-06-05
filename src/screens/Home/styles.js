@@ -69,7 +69,8 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 20
+        fontSize: 20,
+        color: 'gray'
     },
 
     input2: {
@@ -80,13 +81,16 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 30,
+        color: 'gray'
     },
     InputsMenor: {
         display: 'flex',
         flexDirection: 'row',
+        color: 'gray'
     },
     Inputs: {
-        marginTop: 40
+        marginTop: 40,
+        color: 'gray'
     },
     inputM: {
         width: 180,
@@ -96,7 +100,8 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 20
+        fontSize: 20,
+        color: 'gray'
     },
 
     inputM2: {
@@ -107,7 +112,8 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 20
+        fontSize: 20,
+        color: 'gray'
 
     },
 
@@ -120,10 +126,12 @@ const styles = StyleSheet.create({
         borderColor: '#00B5F2',
         borderWidth: 2,
         fontSize: 25,
+        color: 'gray'
     },
     inputData: {
         display: 'flex',
         flexDirection: 'row',
+        color: 'gray'
     },
     inputBuscar: {
         width: 370,
@@ -168,7 +176,8 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         alignItems: 'center',
         marginTop: 10,
-        marginBottom: 5
+        marginBottom: 5,
+        marginLeft: -7
 
     }
 });

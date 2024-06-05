@@ -26,10 +26,11 @@ const styles = StyleSheet.create({
         color: '#209F7C',
     },
     titulo: {
-        color: '#000',
+        color: 'purple',
         fontSize: 20,
         textAlign: 'center',
-        fontWeight: 'bold', 
+        fontWeight: 'bold',
+
     },
     texto: {
         color: '#000',

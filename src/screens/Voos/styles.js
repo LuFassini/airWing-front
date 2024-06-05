@@ -1,3 +1,4 @@
+import { color } from "@rneui/base";
 import { StyleSheet } from "react-native-web";
 
 const styles = StyleSheet.create({
@@ -57,6 +58,8 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontWeight: 'bold',
     },
+
+
     input: {
         width: 370,
         marginLeft: 22,
@@ -65,7 +68,8 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 24
+        fontSize: 20,
+        color: 'gray'
     },
     input2: {
         width: 370,
@@ -75,11 +79,13 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 24
+        fontSize: 20,
+        color: 'gray'
     },
     InputsMenor: {
         display: 'flex',
         flexDirection: 'row',
+        color: 'gray'
     },
     inputM: {
         width: 180,
@@ -89,7 +95,8 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 23
+        fontSize: 20,
+        color: 'gray'
     },
     inputM2: {
         width: 180,
@@ -99,7 +106,8 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 23
+        fontSize: 20,
+        color: 'gray'
     },
     input3: {
         width: 370,
@@ -109,7 +117,8 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 25
+        fontSize: 20,
+        color: 'gray'
     },
 
     inputBuscar: {

@@ -16,7 +16,7 @@ export default function Voos() {
                 </View>
 
                 <View style={styles.quadro2}>
-                    <Text style={styles.titulo}>Nacional | Internacional</Text>
+                    <Text style={styles.titulo}> Nacional   | Internacional</Text>
                 </View>
 
                 <View style={styles.Inputs}>
