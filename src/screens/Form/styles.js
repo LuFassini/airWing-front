@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   button: {
     marginTop: 20,
     padding: 10,
-    backgroundColor: "#d3d3d3",
+    backgroundColor: "#00B5F273",
     borderRadius: 5,
   },
 
@@ -81,20 +81,11 @@ const styles = StyleSheet.create({
     marginTop: 10,
     fontSize: 25
   },
-  
-
-  button: {
-    marginTop: 20,
-    padding: 10,
-    backgroundColor: "#C9D4FF",
-    borderRadius: 5,
-  },
 
   button2: {
     marginTop: 20,
     marginBottom: 20,
     padding: 10,
-    backgroundColor: 'rgba(19, 7, 153, 1, 0,6)',
     borderRadius: 5,
   },
 
@@ -117,7 +108,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 20,
     padding: 10,
-    backgroundColor: "#C9D4FF",
+    backgroundColor: "#00B5F273",
     borderRadius: 5,
     justifyContent: 'center',
     alignItems: 'center',
@@ -145,7 +136,7 @@ radio2:{
 },
   button:{
     padding: 10,
-    backgroundColor: "#C9D4FF",
+    backgroundColor: "#00B5F273",
     borderRadius: 5,
     marginLeft: 10,
     marginTop: -8,
@@ -155,7 +146,6 @@ radio2:{
   }, 
 
   cad: {
-    backgroundColor: 'rgba(0, 181, 242, 1, 0.6)',
     justifyContent: 'center',
     alignContent: 'center',
   },
