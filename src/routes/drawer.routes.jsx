@@ -12,6 +12,8 @@ import Logo from "../components/Logo";
 import CentralDeAjuda from "../screens/CentralDeAjuda";
 import Pacotes from "../screens/Pacotes"
 import Equipe from "../screens/Equipe";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import { Feather } from "@expo/vector-icons";
 
 
 
@@ -43,26 +45,7 @@ const DrawerRoutes = () => {
 
         }}
       />
-      <Drawer.Screen
-        name="Hotéis"
-        component={Hoteis}
-        initialParams={{ data: user }}
-        options={{
-          headerTitle: () => (
-            <Logo left={260}/>
-          ),
-          drawerIcon: ({ focused }) => (
-            <Feather
-              name="user"
-              size={24}
-              color={focused ? "#131313" : "#D6D6D6"}
-            />
-          ),
-          drawerLabel: "Perfil",
-          drawerActiveTintColor: "#131313",
-          drawerInactiveTintColor: "#D6D6D6",
-        }}
-      />
+      
       <Drawer.Screen
         name="Voos"
         component={Voos}
@@ -205,6 +188,7 @@ const DrawerRoutes = () => {
           drawerInactiveTintColor: "#D6D6D6",
         }}
       />
+     
      
     </Drawer.Navigator>
   );
