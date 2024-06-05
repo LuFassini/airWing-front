@@ -18,7 +18,12 @@ const styles = StyleSheet.create({
   },
   p: {
     color: "#130799",
-    fontSize: 15,
+    fontSize: 25,
+  },
+  icon: {
+    color: "#130799",
+    width: 30,
+    height: 30,
   },
   centralize: {
     display: "flex",

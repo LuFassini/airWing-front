@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         width: '100%',
         height: '100%',
+        flex: 1,
     },
     quadro: {
         backgroundColor: 'rgba(203, 115, 228, 0.6)',
@@ -20,7 +21,6 @@ const styles = StyleSheet.create({
         color: '#000',
         fontSize: 20,
         textAlign: 'center',
-        fontWeight: 'bold', 
     },
     texto: {
         color: '#000',
@@ -54,9 +54,15 @@ const styles = StyleSheet.create({
         margin: 20,
         borderRadius: 10,
         marginTop: -35,
-        padding: 20,
         height: 100,
     },
+    titulo1: {
+        color: '#000',
+        fontSize: 20,
+        textAlign: 'center',
+        fontWeight: 'bold', 
+        backgroundColor: 'rgba (107,216,253, 0.3)'
+    }
 });
 
 export default styles;

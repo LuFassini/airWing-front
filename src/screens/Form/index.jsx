@@ -1,52 +1,64 @@
-import { Button, Text, TextInput, View, TouchableOpacity, ScrollView } from "react-native";
+import axios from "axios";
+import { Text, TextInput, View, TouchableOpacity, ScrollView } from "react-native";
 import styles from "./styles";
-import Title from "../../components/Title";
-import TouchButton from "../../components/TouchButton";
 import { useEffect, useState } from "react";
 import { TextInputMask } from "react-native-masked-text";
 import { Icon } from "@rneui/base";
 import { RadioButton } from 'react-native-paper';
 import EasyNavegation from "../../components/EasyNavegation";
 import NewFooter from "../../components/NewFooter";
-export default function Form() {
-  const [name, setName] = useState("");
-  const [birthYear, setBirthYear] = useState("");
+
+export default function Form(  ) {
+  const [username, setName] = useState("");
+  const [datanascimento, setBirthYear] = useState("");
   const [email, setEmail] = useState("");
   const [cpf, setCpf] = useState("");
-  const [phone, setPhone] = useState("");
-  const [sex, setSex] = useState('');
-  const [password, setPassword] = useState("");
+  const [telephone, setPhone] = useState("");
+  const [sexo, setSex] = useState('');
+  const [senha, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(true);
   const [checked, setChecked] = useState('M');
   const [popUp, setPopUp] = useState(false);
-  function handleUser() {
-    if (!name || !birthYear || !email || !cpf || !phone || !sex || !password) {
-      alert("Preencha todos os campos!");
-      return;
-    }
+  const [popUpMessage, setPopUpMessage] = useState('');
+  const [dados, setDados] = useState([]);
 
-    if ( isNaN(birthYear)) {
-      alert("Idade e Ano de Nascimento devem ser números!");
-      return;
-    }
 
-    if (!email.includes("@") || !email.includes(".")) {
-      alert("Email inválido!");
-      return;
-    }
+  const handleUserCreate = async (e) => {
+    e.preventDefault();
+    console.log(dados);
+    try {
+      const response = await axios.post('/users', { username, datanascimento, email, cpf, telephone, sexo, senha });
+      if (response.data.users) {
+        setDados([...dados, response.data])
+        console.log(response);
+      }
+      setName('');
+      setBirthYear('');
+      setEmail('');
+      setCpf('');
+      setPhone('');
+      setSex('');
+      setPassword('');
+      setPopUpMessage("Usuário cadastrado com sucesso!");
+      setPopUp(true);
 
-    console.log({
-      name,
-      birthYear,
-      email,
-      cpf,
-      phone,
-      sex,
-      password,
-    });
-    setPopUp(true);
-    clearFields();
+    } catch (error) {
+      console.error(error);
+    }
   }
+useEffect(() => {
+  async function fetchData() {
+    try {
+      const response = await axios.get('/users');
+      setDados(response.data.users);
+            clearFields();
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  fetchData();
+}, []);
+
 
   function clearFields() {
     setName("");
@@ -78,13 +90,16 @@ export default function Form() {
 
        <ScrollView >
                      
-
-                    <EasyNavegation />
-      <Text style={styles.title}> Cadastro </Text>
+      
+      <EasyNavegation />
+      
+      <View style={styles.cad}>
+      <Text style={styles.titles}> Cadastro </Text>
+      </View>
 
       <View style={styles.user}>
-        <TextInput style={styles.input} placeholder="Nome Completo" onChangeText={setName} value={name} />
-        <TextInput style={styles.input} placeholder="Ano de Nascimento" onChangeText={setBirthYear} value={birthYear} />
+        <TextInput style={styles.input} placeholder="Nome Completo" onChangeText={setName} value={username} />
+        <TextInput style={styles.input} placeholder="Ano de Nascimento" onChangeText={setBirthYear} value={datanascimento} />
         <TextInput style={styles.input} placeholder="Email" onChangeText={setEmail} value={email} />
         <TextInputMask
           style={styles.input}
@@ -102,9 +117,11 @@ export default function Form() {
             withDDD: true,
             dddMask: '(99) ',
           }}
-          value={phone}
+          value={telephone}
           onChangeText={setPhone}
         />
+        <View style={styles.radioButton}>
+          <View style={styles.radio2}>
         <RadioButton
         value="M"
         status={ checked === 'M' ? 'checked' : 'unchecked' }
@@ -113,9 +130,12 @@ export default function Form() {
           sexpassage('M');
         }
         }
-      />
-      <Text>Macho</Text>
-      <RadioButton
+      />  
+
+      <Text style={styles.sexM}>Masculino</Text>
+      </View>
+      <View style={styles.radio2}>
+      <RadioButton 
         value="F"
         status={ checked === 'F' ? 'checked' : 'unchecked' }
         onPress={() => {
@@ -124,23 +144,26 @@ export default function Form() {
         }
         }
       />
-      <Text>Femea</Text>
+
+      <Text style={styles.sexM}>Feminino</Text>
+      </View>
+      </View>
+
         <View style={styles.passwordarea}>
-          <TextInput style={styles.inputsenha} placeholder="Senha" secureTextEntry={showPassword} onChangeText={setPassword} value={password} />
+          <TextInput style={styles.inputsenha} placeholder="Senha" secureTextEntry={showPassword} onChangeText={setPassword} value={senha} />
           <TouchableOpacity onPress={showHidePassword} style={styles.button}>
             <Icon name={showPassword ? "lock" : "lock-open"} />
           </TouchableOpacity>
         </View>
-        <TouchableOpacity onPress={handleUser} style={styles.button} >
-          <Icon name={"lock"} />
+        <TouchableOpacity onPress={handleUserCreate} style={styles.button2} >
+          <Text style={styles.intext}>Cadastrar</Text>
         </TouchableOpacity>
         {
-          popUp && <Text style={styles.popUp}>Usuário cadastrado com sucesso!</Text>
+          popUp && <Text style={styles.popUp}>{popUpMessage}</Text>
         }
       </View>
       <NewFooter />
     </ScrollView>
     </View>
-  );
-}
+)};
 

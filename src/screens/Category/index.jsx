@@ -5,6 +5,7 @@ import Title from "../../components/Title";
 import TouchButton from "../../components/TouchButton";
 import { user } from "../../data/Profile";
 import EasyNavegation from "../../components/EasyNavegation";
+import NewFooter from "../../components/NewFooter";
 
 export default function Category() {
   return (
@@ -15,6 +16,7 @@ export default function Category() {
       <TouchButton route="Category" title="Go to Category" />
 
       <TouchButton route="Profile" title="Go to Profile" data={user} />
+      <NewFooter />
     </View>
   );
 }

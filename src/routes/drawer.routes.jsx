@@ -1,6 +1,12 @@
 
+<<<<<<< HEAD
 import Home from "../screens/Hoteis";
 import Category from "../screens/Category";
+=======
+import Home from "../screens/Home";
+import Profile from "../screens/Profile";
+import Voos from "../screens/Voos";
+>>>>>>> 09147921b5f453fe7a492245757462dd2ce5e212
 import { user } from "../data/Profile";
 import Form from "../screens/Form";
 import Termos from "../screens/Termos";
@@ -8,8 +14,13 @@ import QuemSomos from "../screens/QuemSomos";
 import Logo from "../components/Logo";
 import CentralDeAjuda from "../screens/CentralDeAjuda";
 import Pacotes from "../screens/Pacotes"
+<<<<<<< HEAD
 import Hoteis from "../screens/Hoteis";
 
+=======
+import Detalhes from "../screens/Detalhes";
+import Equipe from "../screens/Equipe";
+>>>>>>> 09147921b5f453fe7a492245757462dd2ce5e212
 
 
 const Drawer = createDrawerNavigator();
@@ -46,7 +57,7 @@ const DrawerRoutes = () => {
         initialParams={{ data: user }}
         options={{
           headerTitle: () => (
-            <Logo />
+            <Logo left={260}/>
           ),
           drawerIcon: ({ focused }) => (
             <Feather
@@ -61,20 +72,20 @@ const DrawerRoutes = () => {
         }}
       />
       <Drawer.Screen
-        name="Category"
-        component={Category}
+        name="Voos"
+        component={Voos}
         options={{
           headerTitle: () => (
             <Logo left={260}/>
           ),
           drawerIcon: ({ focused }) => (
             <Feather
-              name="list"
+              name="send"
               size={24}
               color={focused ? "#131313" : "#D6D6D6"}
             />
           ),
-          drawerLabel: "Categorias",
+          drawerLabel: "Voos",
           drawerActiveTintColor: "#131313",
           drawerInactiveTintColor: "#D6D6D6",
         }}
@@ -183,6 +194,26 @@ const DrawerRoutes = () => {
           drawerInactiveTintColor: "#D6D6D6",
         }}
       />
+       <Drawer.Screen
+        name="Equipe"
+        component={Equipe}
+        options={{
+          headerTitle: () => (
+            <Logo left={260}/>
+          ),
+          drawerIcon: ({ focused }) => (
+            <Feather
+              name="users"
+              size={24}
+              color={focused ? "#131313" : "#D6D6D6"}
+            />
+          ),
+          drawerLabel: "Equipe",
+          drawerActiveTintColor: "#131313",
+          drawerInactiveTintColor: "#D6D6D6",
+        }}
+      />
+     
     </Drawer.Navigator>
   );
 };

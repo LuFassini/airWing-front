@@ -2,13 +2,14 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         backgroundColor: '#fff',
-        padding: 20
+        width: '100%',
+        height: '100%',
+        flex: 1,
     },
     borda: {
+        marginTop: 20,
         backgroundColor: "rgba(104, 221, 189, 0.6)",
-        borderBottomColor: '#130799',
         paddingBottom: 10,
         width: 310,
         borderRadius: 10,
@@ -16,7 +17,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        marginLeft: 28
+        marginLeft: 45,
     },
     titulo: {
         fontSize: 20,
@@ -24,35 +25,88 @@ const styles = StyleSheet.create({
         color: '#209F7C',
         opacity: 1,
         marginBottom: 10,
-        marginTop: 11,
+        marginTop: 18,
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center"
     },
-    text1: {
-        marginRight: 40,
+    texto1: {
+        fontSize: 17,
+        marginBottom: 10,
+        marginTop: 15,
+        marginLeft: 50,
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
     },
-    linha: {
+    linha1: {
         fontSize: 16,
         color: '#209F7C',
         marginBottom: 10,
-        marginTop: 10
+        marginTop: 10,
+        marginLeft: -25,
+    },
+    linha2:{
+        fontSize: 16,
+        color: '#209F7C',
+        marginBottom: 10,
+        marginTop: 10,
+        marginLeft: -25,
+    },
+    texto2: {
+        fontSize: 16,
+        marginBottom: 10,
+        marginTop: 10,
+        marginRight: 140,
+    },
+    texto3: {
+        fontSize: 16,
+        marginBottom: 10,
+        marginTop: 10,
+        marginLeft: 3,
+    },
+    linha3: {
+        fontSize: 16,
+        color: '#209F7C',
+        marginBottom: 10,
+        marginTop: 10,
+        marginLeft: -25,
+    },
+    texto4: {
+        fontSize: 16,
+        marginBottom: 10,
+        marginTop: 10,
+        marginLeft: 20,
+    },
+    linha4: {
+        fontSize: 16,
+        color: '#209F7C',
+        marginBottom: 10,
+        marginTop: 10,
+        marginLeft: -25,
     },
     subTitulo:{
         fontSize: 18,
         fontWeight: 'bold',
         color: '#209F7C',
         marginBottom: 10,
-        marginTop: 10
+        marginTop: 10,
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        marginRight: 10,
     },
     input: {
         height: 40,
+        width: 300,
         margin: 12,
         borderWidth: 1,
         padding: 10,
-        borderColor:'#209F7C'
+        borderColor:'#209F7C',
+        marginRight: 35,
     },
     perguntas:{
+        marginTop: 15,
         marginLeft: 28,
         alignItems:'center',
         justifyContent:'center',
