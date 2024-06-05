@@ -107,9 +107,12 @@ useEffect(() => {
 
        <ScrollView >
                      
-
+      
       <EasyNavegation />
+      
+      <View style={styles.cad}>
       <Text style={styles.titles}> Cadastro </Text>
+      </View>
 
       <View style={styles.user}>
         <TextInput style={styles.input} placeholder="Nome Completo" onChangeText={setName} value={username} />

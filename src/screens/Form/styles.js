@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(19, 7, 153, 1, 0,6)',
     borderRadius: 5,
   },
-  
+
   inputsenha: {
     height: 40,
     borderColor: '#00B5F2',
@@ -150,7 +150,11 @@ radio2:{
   },
   sexM:{
     fontSize: 26,
-  }
+  }, 
+
+  cad: {
+    backgroundColor: 'rgba(0, 181, 242, 1, 0.6)'
+  },
 
 });
 
