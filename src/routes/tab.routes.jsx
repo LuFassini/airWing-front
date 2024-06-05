@@ -2,9 +2,9 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Feather } from "@expo/vector-icons";
 
 import Home from "../screens/Home";
-import Profile from "../screens/Profile";
 import Category from "../screens/Category";
 import { user } from "../data/Profile";
+import Hoteis from "../screens/Hoteis";
 
 const Tab = createBottomTabNavigator();
 
@@ -13,7 +13,7 @@ const TabRoutes = () => {
     <Tab.Navigator screenOptions={{ headerShown: false }}>
       <Tab.Screen
         name="Profile"
-        component={Profile}
+        component={Hoteis}
         initialParams={{ data: user }}
         options={{
           tabBarIcon: ({ focused }) => (

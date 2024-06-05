@@ -1,8 +1,5 @@
-import { createDrawerNavigator } from "@react-navigation/drawer";
-import { Feather } from "@expo/vector-icons";
 
-import Home from "../screens/Home";
-import Profile from "../screens/Profile";
+import Home from "../screens/Hoteis";
 import Category from "../screens/Category";
 import { user } from "../data/Profile";
 import Form from "../screens/Form";
@@ -11,6 +8,7 @@ import QuemSomos from "../screens/QuemSomos";
 import Logo from "../components/Logo";
 import CentralDeAjuda from "../screens/CentralDeAjuda";
 import Pacotes from "../screens/Pacotes"
+import Hoteis from "../screens/Hoteis";
 
 
 
@@ -43,8 +41,8 @@ const DrawerRoutes = () => {
         }}
       />
       <Drawer.Screen
-        name="Profile"
-        component={Profile}
+        name="Hotéis"
+        component={Hoteis}
         initialParams={{ data: user }}
         options={{
           headerTitle: () => (
