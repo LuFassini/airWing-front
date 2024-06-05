@@ -52,7 +52,7 @@ export default function Voos() {
 
                 <View style={styles.buscar}>
                 <TouchableOpacity style={styles.inputBuscar}>
-                    <Text style={styles.textoBotao}>Buscar Hotéis!</Text>
+                    <Text style={styles.textoBotao}>Buscar Voos!</Text>
                 </TouchableOpacity>
                 </View>
 

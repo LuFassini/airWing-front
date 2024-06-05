@@ -52,9 +52,9 @@ const styles = StyleSheet.create({
     },
     titulo: {
         color: '#A000EB',
-        fontSize: 20,
+        fontSize: 22,
         textAlign: 'center',
-        
+        fontWeight: 'bold',
     },
     input: {
         width: 370,
@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
+        fontSize: 24
     },
     input2: {
         width: 370,
@@ -73,6 +74,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
+        fontSize: 24
     },
     InputsMenor: {
         display: 'flex',
@@ -80,12 +82,13 @@ const styles = StyleSheet.create({
     },
     inputM: {
         width: 180,
-        marginLeft: 22,
+        marginLeft: 23,
         height: 50, 
         marginTop: 8,
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
+        fontSize: 23
     },
     inputM2: {
         width: 180,
@@ -95,6 +98,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
+        fontSize: 23
     },
     input3: {
         width: 370,
@@ -104,6 +108,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
+        fontSize: 25
     },
     inputBuscar: {
         width: 370,
@@ -120,6 +125,8 @@ const styles = StyleSheet.create({
         fontSize: 30,
         textAlign: 'center',
         marginTop: 50,
+        fontWeight: 'bold',
+        color: '#1B0EB8',
     },
     linha: {
         fontSize: 16,
@@ -142,10 +149,11 @@ const styles = StyleSheet.create({
     },
     textoBotao: {
         color: '#1A6069',
-        fontSize: 20,
+        fontSize: 25,
+        fontWeight: 'bold',
         textAlign: 'center',
         alignItems: 'center',
-        marginTop: 5
+        marginTop: 10
     }
 });
 
