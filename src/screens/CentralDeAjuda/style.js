@@ -34,7 +34,6 @@ const styles = StyleSheet.create({
         fontSize: 17,
         marginBottom: 10,
         marginTop: 15,
-        marginLeft: 50,
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
@@ -94,7 +93,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        marginRight: 10,
+        marginLeft: -25
     },
     input: {
         height: 40,
@@ -104,6 +103,7 @@ const styles = StyleSheet.create({
         padding: 10,
         borderColor:'#209F7C',
         marginRight: 35,
+        fontSize: 17
     },
     perguntas:{
         marginTop: 15,
@@ -112,6 +112,17 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         textAlign:'center'
         
-    }
+    },
+    titulo: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#209F7C',
+        opacity: 1,
+        marginBottom: 10,
+        marginTop: 18,
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center"
+    },
 });
 export default styles;
