@@ -135,6 +135,7 @@ useEffect(() => {
           onChangeText={setPhone}
         />
         <View style={styles.radioButton}>
+          <View style={styles.radio2}>
         <RadioButton
         value="M"
         status={ checked === 'M' ? 'checked' : 'unchecked' }
@@ -143,11 +144,11 @@ useEffect(() => {
           sexpassage('M');
         }
         }
-      />
-      </View>
+      />  
 
-      <View style={styles.butt}>
       <Text style={styles.sexM}>Masculino</Text>
+      </View>
+      <View style={styles.radio2}>
       <RadioButton 
         value="F"
         status={ checked === 'F' ? 'checked' : 'unchecked' }
@@ -157,7 +158,8 @@ useEffect(() => {
         }
         }
       />
-      <Text>Feminino</Text>
+      <Text style={styles.sexM}>Feminino</Text>
+      </View>
       </View>
 
         <View style={styles.passwordarea}>
