@@ -7,6 +7,36 @@ const styles = StyleSheet.create({
         height: '100%',
         flex: 1,
     },
+    franca: {
+        backgroundColor: 'rgba(203, 115, 228, 0.45)',
+        padding: 20,
+        margin: 20,
+        borderRadius: 5,
+    },
+    espanha: {
+        backgroundColor: 'rgba(203, 115, 228, 0.45)',
+        padding: 20,
+        margin: 20,
+        borderRadius: 5,
+    },
+    eua: {
+        backgroundColor: 'rgba(203, 115, 228, 0.45)',
+        padding: 20,
+        margin: 20,
+        borderRadius: 5,
+    },
+    nomeVoo: {
+        color: '#A000EB',
+        fontSize: 20,
+        textAlign: 'center',
+        fontWeight: 'bold'
+
+    },
+    preco: {
+        color: '#130799',
+        fontSize: 18,
+        textAlign: 'center',
+    },
     quadro: {
         backgroundColor: 'rgba(203, 115, 228, 0.45)',
         padding: 20,

@@ -30,15 +30,16 @@ const styles = StyleSheet.create({
         color: '#A000EB',
         fontSize: 20,
         textAlign: 'center',
+        fontWeight: 'bold'
     },
     localizacao: {
         color: '#130799',
-        fontSize: 16,
+        fontSize: 19,
         textAlign: 'center',
     },
     preco: {
         color: '#130799',
-        fontSize: 16,
+        fontSize: 18,
         textAlign: 'center',
     },
     quadro: {
@@ -67,7 +68,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 30
+        fontSize: 25
     },
 
     input2: {
@@ -88,24 +89,24 @@ const styles = StyleSheet.create({
     },
     inputM: {
         width: 180,
-        marginLeft: 22,
+        marginLeft: 23,
         height: 50,
         marginTop: 8,
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 30
+        fontSize: 23
     },
 
     inputM2: {
         width: 180,
-        marginLeft: 12,
+        marginLeft: 10,
         height: 50,
         marginTop: 8,
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 30,
+        fontSize: 24
 
     },
 

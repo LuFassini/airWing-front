@@ -1,6 +1,6 @@
 import { ScrollView, TextInput } from "react-native-gesture-handler/lib/commonjs";
 import styles from "./styles";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Image} from "react-native";
 import EasyNavegation from "../../components/EasyNavegation";
 import NewFooter from "../../components/NewFooter";
 
@@ -58,6 +58,30 @@ export default function Voos() {
 
                 <Text style={styles.subTitulo}>Voos</Text>
                 <Text style={styles.linha}>________________________________________________</Text>
+
+                <View style={styles.voos}>
+
+                    <View style={styles.franca}>
+                        <Image source={require('../../../assets/images/franca.png')} style={{ width: 20, height: 20, marginTop: 30, marginBottom: 35, width: 350, height: 210, borderRadius: 5, marginLeft: 7, }} />
+                        <Text style={styles.nomeVoo}>França</Text>
+                        <Text style={styles.preco}>A partir de: R$ 9.089,00</Text>
+                    </View>
+
+                    <View style={styles.espanha}>
+                        <Image source={require('../../../assets/images/espanha.png')} style={{ width: 20, height: 20, marginTop: 30, marginBottom: 35, width: 350, height: 210, borderRadius: 5, marginLeft: 7, }} />
+                        <Text style={styles.nomeVoo}>Espanha</Text>
+                        <Text style={styles.preco}>A partir de: R$ 10.177,00</Text>
+                    </View>
+
+                    <View style={styles.eua}>
+                        <Image source={require('../../../assets/images/eua.png')} style={{ width: 20, height: 20, marginTop: 30, marginBottom: 35, width: 350, height: 210, borderRadius: 5, marginLeft: 7, }} />
+                        <Text style={styles.nomeVoo}>Estados Unidos</Text>
+                        <Text style={styles.preco}>A partir de: R$ 7.417,00</Text>
+                    </View>
+                </View>
+
+
+
 
                 <TouchableOpacity style={styles.botao}>
                     <Text style={styles.textoBotao}>Central de Ajuda!</Text>
