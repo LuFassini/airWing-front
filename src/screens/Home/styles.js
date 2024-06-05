@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 30
+        fontSize: 25
     },
 
     input2: {
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 30
+        fontSize: 25
     },
 
     inputM2: {
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
         borderRadius: 2,
         borderColor: '#00B5F2',
         borderWidth: 2,
-        fontSize: 30,
+        fontSize: 25
 
     },
 
