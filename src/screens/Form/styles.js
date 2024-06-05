@@ -28,14 +28,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
-    fontSize: 30
+    fontSize: 23,
+    color: 'gray'
   },
   
   sexM: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
-    fontSize: 30
+    fontSize: 23,
+    color: 'gray'
   },
 
   input: {
@@ -44,9 +46,10 @@ const styles = StyleSheet.create({
     borderWidth: 1, 
     marginBottom: 10,
     paddingLeft: 10,
-    borderRadius: 5, // Borda arredondada
+    borderRadius: 5, 
     marginTop: 10,
-    fontSize: 25
+    fontSize: 20,
+    color: 'gray'
   },
 
   titles: {
@@ -80,7 +83,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 10,
     marginTop: 10,
-    fontSize: 25
+    fontSize: 23,
+    
   },
 
   button2: {
@@ -100,6 +104,7 @@ const styles = StyleSheet.create({
     width: 730,
     fontSize: 25,
     marginTop: 15,
+    color: 'gray'
     
   },
 
