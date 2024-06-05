@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     },
 
     titulo2: {
-        fontSize: 20,
+        fontSize: 25,
         fontWeight: 'bold',
         color: '#130799',
         opacity: 1,
@@ -18,11 +18,10 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        marginLeft: 20
     },
 
     subTitulo:{
-        fontSize: 20,
+        fontSize: 23,
         fontWeight: 'bold',
         color: '#0019FA',
         marginBottom: 10,
@@ -47,13 +46,14 @@ const styles = StyleSheet.create({
     borda2:{
         backgroundColor: 'rgba(78, 205, 248, 0.5)',
         paddingBottom: 10,
-        width:315,
+        width:330,
         borderRadius: 10,
         marginBottom: 10,
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        marginLeft: 45
+        marginLeft: 45,
+        marginTop: 10
     },
 
     titulo3:{
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     },
     
     info: {
-        fontSize: 18,
+        fontSize: 19,
         color: '#000',
         marginBottom: 10,
         marginTop: 10,
