@@ -6,19 +6,19 @@ import EasyNavegation from "../../components/EasyNavegation";
 import NewFooter from "../../components/NewFooter";
 
 export default function Home() {
-  return (
+    return (
 
-      <View style={styles.container}>
+        <View style={styles.container}>
             <ScrollView>
-        <EasyNavegation />
+                <EasyNavegation />
 
                 <View style={styles.Inputs}>
                     <TextInput style={styles.input}
                         placeholder="Para onde você vai?"
                         onChangeText={text => onChangeText(text)}
                     />
-                    </View>
-                     <View style={styles.InputsMenor}>
+                </View>
+                <View style={styles.InputsMenor}>
                     <TextInput style={styles.inputM}
                         placeholder="Data de entrada"
                         onChangeText={text => onChangeText(text)}
@@ -27,12 +27,12 @@ export default function Home() {
                     <TextInput style={styles.inputM2}
                         placeholder="Data de saída"
                         onChangeText={text => onChangeText(text)}
-                    />  
-                      </View>
-                      <TextInput style={styles.input}
-                        placeholder="Quartos e Hóspedes"
-                        onChangeText={text => onChangeText(text)}
                     />
+                </View>
+                <TextInput style={styles.input}
+                    placeholder="Quartos e Hóspedes"
+                    onChangeText={text => onChangeText(text)}
+                />
                 <TouchableOpacity style={styles.inputBuscar}>
                     <Text style={styles.textoBotao}>Buscar Hotéis!</Text>
                 </TouchableOpacity>
@@ -40,11 +40,14 @@ export default function Home() {
                 <Text style={styles.subTitulo}>Hotéis</Text>
                 <Text style={styles.linha}>________________________________________________</Text>
 
+                <TouchableOpacity style={styles.botao}>
+                    <Text style={styles.textoBotao}>Central de Ajuda!</Text>
+                </TouchableOpacity>
 
-        <NewFooter />
-        </ScrollView>
-      </View>
- 
+                <NewFooter />
+            </ScrollView>
+        </View>
 
-  );
+
+    );
 }

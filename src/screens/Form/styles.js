@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
     marginRight: 50,
     color: '#1B0EB8',
   },
-  
   textSubTitle: {
     marginBottom: 10, 
     fontSize: 15, 
@@ -51,6 +50,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
+    
   },
   button: {
     marginTop: 20,
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     marginBottom: 20,
     padding: 10,
-    backgroundColor: "#C9D4FF",
+    backgroundColor: 'rgba(19, 7, 153, 1, 0,6)',
     borderRadius: 5,
   },
   inputsenha: {
@@ -72,11 +72,22 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     paddingLeft: 10,
     borderRadius: 5, // Borda arredondada
-    width: '75%',
+    width: 730,
+    fontSize: 25
   },
+
   popUp: {
- color: '#209F7C',
+  color: '#209F7C',
   },
+
+  button2:{
+    marginTop: 20,
+    marginBottom: 20,
+    padding: 10,
+    backgroundColor: "#C9D4FF",
+    borderRadius: 5,
+  },
+
   title: {
     fontSize: 30,
     fontWeight: 'bold',
@@ -85,9 +96,19 @@ const styles = StyleSheet.create({
     marginRight: 50,
     color: '#00B5F2'
   },
+
   radioButton:{
- flexDirection: "row"
+  flexDirection: "row"
+  },
+
+  button:{
+    padding: 10,
+    backgroundColor: "#C9D4FF",
+    borderRadius: 5,
+    marginLeft: 10,
+    marginTop: -8,
   }
+
 });
 
 export default styles;

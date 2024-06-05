@@ -7,6 +7,7 @@ import { Icon } from "@rneui/base";
 import { RadioButton } from 'react-native-paper';
 import EasyNavegation from "../../components/EasyNavegation";
 import NewFooter from "../../components/NewFooter";
+
 export default function Form() {
   const [username, setName] = useState("");
   const [datanascimento, setBirthYear] = useState("");
@@ -143,8 +144,11 @@ useEffect(() => {
         }
         }
       />
-      <Text>Masculino</Text>
-      <RadioButton
+      </View>
+
+      <View style={styles.butt}>
+      <Text style={styles.sexM}>Masculino</Text>
+      <RadioButton 
         value="F"
         status={ checked === 'F' ? 'checked' : 'unchecked' }
         onPress={() => {
@@ -172,6 +176,5 @@ useEffect(() => {
       <NewFooter />
     </ScrollView>
     </View>
-  );
-}
+)};
 
