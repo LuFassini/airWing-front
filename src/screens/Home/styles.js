@@ -30,15 +30,16 @@ const styles = StyleSheet.create({
         color: '#A000EB',
         fontSize: 20,
         textAlign: 'center',
+        fontWeight: 'bold'
     },
     localizacao: {
         color: '#130799',
-        fontSize: 16,
+        fontSize: 19,
         textAlign: 'center',
     },
     preco: {
         color: '#130799',
-        fontSize: 16,
+        fontSize: 18,
         textAlign: 'center',
     },
     quadro: {

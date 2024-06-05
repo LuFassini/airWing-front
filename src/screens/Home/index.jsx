@@ -47,21 +47,21 @@ export default function Home() {
                         <Image source={require('../../../assets/images/hotel-negresco.png')} style={{ width: 20, height: 20, marginTop: 30, marginBottom: 35, width: 350, height: 210, borderRadius: 5, marginLeft: 7, }} />
                         <Text style={styles.nomeHotel}>Hotel Negresco</Text>
                         <Text style={styles.localizacao}>Localização: França</Text>
-                        <Text style={styles.preco}>Preço: R$ 9.089,00</Text>
+                        <Text style={styles.preco}>A partir de : R$ 9.089,00</Text>
                     </View>
 
                     <View style={styles.madrid}>
                         <Image source={require('../../../assets/images/eurostar.png')} style={{ width: 20, height: 20, marginTop: 30, marginBottom: 35, width: 350, height: 210, borderRadius: 5, marginLeft: 7, }} />
                         <Text style={styles.nomeHotel}>Hotel Eurostar Madrid Tower</Text>
                         <Text style={styles.localizacao}>Localização: Espanha </Text>
-                        <Text style={styles.preco}>Preço: R$ 55.177,00</Text>
+                        <Text style={styles.preco}>A partir de: R$ 55.177,00</Text>
                     </View>
 
                     <View style={styles.anantara}>
                         <Image source={require('../../../assets/images/anantara_palazzo.png')} style={{ width: 20, height: 20, marginTop: 30, marginBottom: 35, width: 350, height: 210, borderRadius: 5, marginLeft: 7, }} />
                         <Text style={styles.nomeHotel}>Hotel Anantara Palazzo</Text>
                         <Text style={styles.localizacao}>Localização: Itália</Text>
-                        <Text style={styles.preco}>Preço: R$ 4.417,00</Text>
+                        <Text style={styles.preco}>A partir de: R$ 4.417,00</Text>
                     </View>
                 </View>
 
