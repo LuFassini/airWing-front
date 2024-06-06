@@ -63,6 +63,4 @@ Contribuições são sempre bem-vindas para melhorar o boilerplate. Veja como vo
 
 Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## Contato
 
-Se você tiver alguma dúvida sobre o projeto, sinta-se à vontade para me contatar em [meu e-mail](mailto:dev.felipesantos@gmail.com) ou pelo meu [LinkedIn](https://www.linkedin.com/in/92felipesantos).
