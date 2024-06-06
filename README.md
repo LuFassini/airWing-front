@@ -63,4 +63,94 @@ Contribuições são sempre bem-vindas para melhorar o boilerplate. Veja como vo
 
 Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
+# README
+
+Este README oferece uma visão detalhada do projeto, incluindo sua estrutura de pastas, descrição dos arquivos e uma explicação dos principais componentes e funcionalidades implementadas.
+
+## Estrutura de Pastas
+
+```
+├── assets
+├── src
+│   ├── components
+│   │   ├── EasyNavigation
+│   │   ├── HandleHelperText
+│   │   ├── Logo
+│   │   ├── NewFooter
+│   │   ├── Title
+│   │   └── TouchButton
+│   ├── data
+│   ├── routes
+│   │   └── Navegacao
+│   └── screens
+├── .gitignore
+├── App.jsx
+├── LICENSE
+├── README.md
+├── app.json
+├── babel.config.js
+├── package-lock.json
+└── package.json
+```
+
+- **assets**: Contém imagens utilizadas no projeto.
+- **src**: Contém o código-fonte do projeto.
+  - **components**: Armazena componentes reutilizáveis em todo o aplicativo.
+  - **data**: Contém possíveis dados estáticos ou de configuração.
+  - **routes**: Configurações de navegação no aplicativo.
+  - **screens**: Contém as telas visíveis para o usuário.
+- **.gitignore**: Especifica quais arquivos e diretórios devem ser ignorados pelo controle de versão Git.
+- **App.jsx**: Ponto de entrada principal do aplicativo.
+- **LICENSE**: Contém a licença do projeto.
+- **README.md**: Este arquivo, contendo informações sobre o projeto.
+- **app.json**: Configurações do aplicativo.
+- **babel.config.js**: Configurações do Babel para transpilação do código.
+- **package-lock.json**: Lista exata das dependências instaladas.
+- **package.json**: Metadados do projeto e dependências npm.
+
+## Descrição dos Componentes
+
+### `EasyNavigation`
+
+Componente responsável pela navegação fácil entre diferentes partes do aplicativo.
+
+- Utiliza o `react-native` para criar os componentes visuais.
+- Usa o `@react-navigation/native` para gerenciar a navegação.
+- Inclui botões para navegar para as seções de Hoteis, Voos e Pacotes.
+
+### `HandleHelperText`
+
+Componente para exibir um texto de ajuda ou título.
+
+- Aceita um parâmetro `title` para exibir o texto desejado.
+- Usa estilos definidos no arquivo `styles.js`.
+
+### `Logo`
+
+Componente para exibir a logo do aplicativo.
+
+- Possui uma estilização fixa para a logo.
+
+### `NewFooter`
+
+Componente para finalizar a página e oferecer navegação pelas redes sociais.
+
+- Provavelmente inclui links para redes sociais e outras páginas relevantes.
+
+### `Title`
+
+Componente para exibir um título na página.
+
+### `TouchButton`
+
+Componente para navegação, possivelmente um botão com funcionalidade de navegação.
+
+## Sobre as Pastas
+
+- **Data**: Contém arquivos de modelo para criar o usuário.
+- **Routes**: Configurações de navegação, possivelmente usando um Drawer Navigator com páginas como Perfil, Cadastro, Voos, Hoteis, Termos, Equipe, Empresa, entre outras.
+- **Screens**: Contém as telas visíveis para o usuário.
+
+Este README fornece uma visão geral do projeto, incluindo sua estrutura e componentes principais. Para obter mais detalhes sobre implementações específicas ou funcionalidades, consulte o código-fonte do projeto.
+
 
